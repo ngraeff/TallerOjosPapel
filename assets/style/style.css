@@ -1,0 +1,1039 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================szzz===============NAVBAR======================================== */
+header{
+    background-color: rgba(102, 104, 105, 0.685);
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Navbar con Flexbox, despues de la primera pre-entrega voy a optar por esta forma */
+nav{
+    height: 100%;  
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.header__img{
+    width: 7rem;
+    align-items: center;
+}
+.navbar{
+    list-style-type: none;
+}
+.navbar__items{
+    display: inline;
+}
+.navbar__items a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.navbar__items a:hover{
+    color: #e637bf;
+    
+}
+
+/* ========================================BANNER======================================== */
+
+.banner{
+    background-image:  linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)),url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+.banner__text{
+    padding-left: 10rem;
+    margin: auto;
+}
+.banner__text__title{
+    color: #fff;
+    font-size: 8rem;
+    padding-bottom: 1rem;
+    margin-top: 8rem;
+}
+
+.banner__text__eslogan{
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.banner__text__eslogan span{
+    color: #e637bf;
+    font-style: italic;
+    font-weight: 600;
+}
+.banner__contenedor{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.banner__img{
+    width: 35rem;
+    margin-top: 8rem;
+}
+
+/* ========================================CARRUSEL========================================*/
+/* Como no se animar el carrusel por el momento queda estático */
+.carrusel{
+    padding: 5rem 0rem;
+    background-color: #fff;
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.carrusel__contenedor{
+    width: 25%;               
+    height: 100%;
+}
+
+.carrusel__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Busque en internet como hacer para que la imagen se */
+}
+
+/*  ========================================PROYECTOS======================================== */
+
+.proyectos{
+    background-color: #fff;
+    padding-bottom: 5rem;
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.proyecto__title{
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+/*  ========================================CARD=================================*/
+.contenedor__card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.2rem 0.4rem 0 ;
+    margin: auto;
+}
+.card_proyectos{
+    transition: all 0.3s ease-in-out;
+}
+.card_proyectos h3 br{
+    display: none;
+}
+.card_proyectos h3{
+    display: none;  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.card img{
+    height: 70%;
+    object-fit: cover;
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s ease;
+}
+.card__text{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center; 
+}
+.card__pie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: 1s ease-in-out;
+}
+.card__pie p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+/* ==========ANIMACIONES CARD DE PROYECTOS========== */
+.egresaditos:hover{
+    background-image:  linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)),url(../img/egresaditos.webp);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+.yoga:hover{
+    background-image:  linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)),url(../img/yoga.webp);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+.emprendimiento:hover{
+    background-image:  linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)),url(../img/Emprendimientos.webp);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+.personal_trainer:hover{
+    background-image:  linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)),url(../img/Entrenamiento.webp);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+.card_proyectos:hover img{
+    display: none;
+}
+.card_proyectos:hover .card__pie{
+    display: none;
+}
+.card_proyectos:hover h3{
+    display: flex;
+
+    transition: all 1s ease-in-out;
+}
+/*  ========================================FOOTER======================================== */
+
+footer{
+    background-color: rgba(102, 104, 105, 0.685);
+    height: 20rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+/* LOGO DEL FOOTER */
+.footer__logo{
+
+    padding-left: 3rem;
+}
+.footer__logo img{
+    width: 10rem;
+    align-items: center;
+    padding: 0;
+}
+/* MAPA DE PAGINA */
+.footer__map--ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    padding-top: 2rem;
+}
+
+.footer__map--li{
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.footer__map--li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.footer__map--li a:hover{
+    color: #e637bf;
+}
+
+/* REDES SOCIALES */
+.footer__redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    padding-right: 3rem;
+    flex-direction: column;
+}
+.footer__redes h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer__redes--ul{
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    padding-top: 2rem;
+    display: flex;
+    margin: auto;
+}
+.footer__redes img{
+    width: 1.8rem;
+    margin: 0 1rem;
+    padding: 0.5rem 0.5rem;
+    border: solid 0.1rem black; 
+    border-radius: 40%;
+    transition: 0.3s ;
+}
+.footer__redes img:hover{
+    background-color: #e637bf;
+    cursor: pointer;
+}
+.footer__redes img:hover{
+    background-color: #e637bf;
+    cursor: pointer;
+}
+
+/*  ========================================CARD-COMPRAS======================================== */
+
+.ventas{
+    width: 100%;
+    height: 95rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ventas__title{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+.ventas__text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 3rem;
+    text-align: center;
+}
+.contenedor__card__ventas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contenedor__3card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.card .boton{
+    border: 0.8rem solid rgb(2,3,129) ;
+    background-color: rgb(2,3,129);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+.boton__ventas{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgb(207, 204, 204);
+    border-radius: 1rem;
+
+}
+
+/* ========================================PERSONALIZA======================================== */
+
+.personaliza{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#272727;
+}
+.personaliza img{
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding-left: 3rem;
+}
+
+.contenedor__derecho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-right: 6rem;
+
+}
+.contenedor__derecho h2{
+    color: #fff;
+    font-size: 8rem;
+    text-align: end;
+}
+
+.contenedor__derecho a{
+    text-decoration: none;
+    color: #e637bf;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0.2rem solid #e637bf;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin-top: 5rem;
+    transition: all .3s ease-in-out;
+}
+
+.contenedor__derecho a:hover{
+    background-color: #e637bf;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*======================================== BUZOS ========================================*/
+.ventas__buzos{
+    width: 100%;
+    height: 60rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*======================================== CLIENTES FELICES ========================================*/
+
+.clientes_felices{
+    height: 100vh;
+    width: 100%;
+    padding-top:12rem ;
+    background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)),url(../img/background.jpg);
+    /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
+    background-size: cover;
+    background-position: center;
+}
+
+.clientes_felices__title{
+    font-size: 9rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    color: #fff;
+    padding: 0rem 6rem;
+}
+
+.clientes_felices__text{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 0rem 6rem;
+    margin-bottom: 3rem;
+}
+
+.clientes_felices__text span{
+    font-weight: 600;
+    color: #e637bf;
+    font-style: italic;
+}
+
+/*======================================== COMENTARIOS ======================================== */
+.comentarios_clientes{
+    width: 100%;
+    height: 136rem;
+
+}
+.comentario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 ;
+}
+
+.comentario p{
+    width: 55%;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 5rem;
+}
+
+.comentario p span{
+    font-weight: 600;
+}
+
+.comentario img{
+    width: 28rem;
+    border-radius: 2rem;
+    margin: 3rem;
+}
+
+.comentario .yoga{
+    margin-left: 7rem;
+}
+/*======================================== EQUIPO ========================================*/
+
+.equipo{
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.equipo__title{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.card__puesto{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    color: #706f6f;
+}
+
+/*======================================== NUESTRO TALLER ========================================*/
+
+.nuestro_taller{
+    width: 100%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color:#706f6f;
+}
+
+.nuestro_taller__title{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.nuestro_taller__text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 3rem;
+    padding: 0 20rem;
+    text-align: justify;
+    color: #fff;
+}
+.nuestro_taller__cierre{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+    padding: 0 20rem;
+    text-align: center;
+    color: #e637bf;
+}
+
+.nuestro_taller__boton{
+    text-decoration: none;
+    color: #e637bf;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 0.2rem solid #e637bf;
+    border-radius: 2rem;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    transition: all .3s ease;
+}
+.nuestro_taller__boton:hover{
+    background-color: #e637bf;
+    color: #fff;
+    cursor: pointer;
+}
+/*======================================== HORARIOS ========================================*/
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.horarios h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 3rem;
+    text-align: center;
+}
+
+.horarios section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.reloj{
+    width: 11rem;
+    margin: 1rem;
+    padding-left: 5rem;
+}
+/* Lo hago separado porque tienen distintos tamaños las img */
+.calendario{
+    width: 15rem;
+}
+
+.horarios h3{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 4rem;
+    text-align: center;
+}
+
+/*======================================== MAPA ========================================*/
+
+
+.mapa{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #706f6f;
+    
+}
+.mapa h2{
+    margin: 3rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.mapa iframe{
+    width: 50%;
+    height: 40rem;
+    margin: 2rem;
+}  
+
+
+
+/*======================================== FORMULARIO ========================================*/
+.formulario{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 3rem;
+    text-align: center;
+}
+.formulario form{
+    background-color: #706f6f;
+    border-radius: 2rem;
+    width: 45%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 4rem; 
+}
+.form__conjunto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.form__conjunto .conjunto{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.form__conjunto .conjunto input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 0 0 1rem;
+    margin: 0 0 0 1rem;
+    font-size: .8rem;
+}
+.form__conjunto--triple .conjunto__triple{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.form__conjunto--triple{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.form__conjunto--triple select{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: .7rem;
+}
+.form__conjunto--triple .talle select{
+    width: 5rem;
+}
+.form__conjunto--triple input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: .7rem;
+}
+.form__conjunto--comentario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.form__conjunto--comentario label{
+    margin-bottom: 1rem;
+}
+.form__conjunto--comentario textarea{
+    width: 96%;
+    height: 10rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+.boton2{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+
+}
+.boton2--input{
+    font-size: 1.2rem;
+    padding: .8rem;
+    border: solid .12rem #000000;
+    background-color: #bebebe;
+    border-radius: 1rem;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* =============================================================================== 
+====================================QUERY=========================================
+==================================================================================
+*/
+
+
+@media screen and (max-width: 1320px){
+    /* ====================NAVBAR====================*/
+    .navbar__items a {
+        font-size: 1.2rem;
+    }
+    /* ===================BANNER=============== */   
+    .banner__text{
+        padding-left: 6rem;
+        margin: auto;
+    }
+    .banner__text__title{
+        color: #fff;
+        font-size: 6rem;
+        padding-bottom: 1rem;
+        margin-top: 8rem;
+    }
+    .banner__text__eslogan{
+        margin-top: 3rem;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .banner__img{
+        width: 20rem
+    }
+    /* ===================PROYECTOS=============== */
+    .proyectos{
+        padding-bottom: 2rem;
+        height: 70rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: min-content min-content;
+        grid-template-areas:
+        "proyecto1 proyecto2"
+        "proyecto3 proyecto4"
+        ;
+        align-items: center;
+        justify-items: center;
+    }
+    .proyecto__title{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        text-align: center;
+    }
+    .card{
+        margin: 3rem;  
+    }
+    .egresaditos{
+        grid-area: proyecto1;
+    }
+    .personal_trainer{
+        grid-area: proyecto2;
+    }
+    .emprendimiento{
+        grid-area: proyecto4;
+    }
+    .yoga{
+        grid-area: proyecto3;
+    }
+    /* ==================================================== */
+
+
+}
+
+@media screen and (max-width: 800px){
+    /* ====================NAVBAR====================*/
+    .header__img{
+        display: none;
+        width: 0;
+    }
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__items{
+        display: inline;
+    }
+    .navbar__items a {
+        font-size: 1.1rem;
+    }
+
+    /* ===================BANNER=============== */
+    .banner__text{
+        padding-left: 0rem;
+        text-align: center;
+    }
+    .banner__text__title{
+        font-size: 6.5rem;
+        margin-top: 7rem;
+    }
+    .banner__text__eslogan{
+        font-size: 1.8rem;
+    }
+    .banner__contenedor{
+        width: 0;
+    }
+    .banner__img{
+        display: none;
+    }
+    /* ===================PROYECTOS=============== */
+    .proyectos{
+        height: 60rem;
+    }
+    .card{
+        width: 70%;
+        height: 24rem;
+    }
+    .card img{
+        height: 15rem;
+    }
+    .card__pie{
+        display: flex;
+        height: 45%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .5rem;
+    }
+    .card__text{
+        padding: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card__title{
+        padding-top:0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        font-size: 1rem;
+        margin: 0;
+    } 
+    .card__pie p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+        padding: 0 .5rem;
+        text-align: center;
+    }
+
+    /* =============================FOOTER================= */
+    footer{
+        height: 35rem;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+    /* LOGO DEL FOOTER */
+    .footer__logo{
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__logo img{
+        width: 8rem;
+        align-items: center;
+        padding: 0;
+    }
+    /* MAPA DE PAGINA */
+    .footer__map{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__map--ul{
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        width: 15rem;
+        padding-top: 0rem;
+    }
+
+    .footer__map--li{
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+    .footer__map--li a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2rem;
+        transition: 0.3s;
+    }
+    .footer__map--li a:hover{
+        color: #e637bf;
+    }
+
+    /* REDES SOCIALES */
+    .footer__redes{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 10rem;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    .footer__redes h3{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+}
+
+@media  screen and (max-width: 400px) {
+    
+}

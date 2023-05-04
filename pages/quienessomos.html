@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/logo.ico" >
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title> Quienes Somos - Taller Ojos de Papel</title>
+</head>
+</head>
+<body>
+    <header>
+        <!-- Menu de navegacion del proyecto con lista no ordenada -->
+        <nav> 
+            <a href="../index.html"><img class="header__img" src="../assets/img/logopagina.png" alt="Logo del taller"></a>
+            <!-- Navbarr -->
+            <ul class="navbar">
+                <li class="navbar__items"><a href="../index.html">Inicio</a></li>
+                <li class="navbar__items"><a href="./sticker.html">Sticker</a></li>
+                <li class="navbar__items"><a href="./prendas.html">Prendas</a></li>
+                <li class="navbar__items"><a href="./clientes.html">Clientes</a></li>
+                <li class="navbar__items"><a href="./quienessomos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="equipo__title">Nuestro Equipo</h2>
+        <article class="equipo">
+            <section class="card">
+                <img src="../assets/img/persona1.webp" alt="Imagen de persona">
+                <div class="card__pie">
+                    <h4 class="card__title">Nallibe</h4>
+                    <p class="card__puesto" >Fundadora</p>
+                </div>
+            </section>
+            <section class="card">
+                <img src="../assets/img/persona.jpeg" alt="Imagen de persona">
+                <div class="card__pie">
+                    <h4 class="card__title">Lisandro</h4>
+                    <p class="card__puesto">Transportista</p>
+                </div>
+            </section>
+            <section class="card">
+                <img src="../assets/img/persona.jpeg" alt="Imagen de persona">
+                <div class="card__pie">
+                    <h4 class="card__title"> Paz</h4>
+                    <p class="card__puesto">Community Manager</p>
+                </div>
+            </section>
+        </article>
+
+        <article class="nuestro_taller">
+            <h2 class="nuestro_taller__title">Nuestro Taller</h2>
+            <p class="nuestro_taller__text"> El proyecto nace desde la conciencia y el poder dar un mensaje de quiénes somos y cuáles son nuestros ideales en esta jungla de cemento. Tener conciencia de estar vivos, de existir y de amar la vida como una auténtica montaña rusa, de eso se trata. Todo surge desde el amor que se va a transformar en cada diseño que llevarán las prendas. Si puedes pensarlo, puedo plasmarlo en una prenda..</p>
+            <p class="nuestro_taller__cierre">Y vos, ¿Qué queres decir hoy?</p>
+            <a class="nuestro_taller__boton"href="">CONTACTÁNOS</a>
+        </article>
+        <article class="horarios">
+            <h2>Nuestros Horarios</h2>
+            <section>
+                <h3 class="horarios__title">De Lunes a Viernes</h3>
+                <img class="calendario"src="../assets/img/calendario.png" alt="Imagen de un calendario">
+            </section>
+            <section>
+                <img class="reloj" src="../assets/img/reloj.png" alt="Imagen de un reloj">
+                <h3 class="horarios__title">De 10:00 a 20:00hs</h3>
+            </section>
+        </article>
+
+        <article class="mapa">
+            <h2>Zona de entregas</h2>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rOueYAExmCmHyzFJyu10oqAmvS2WeRU&ehbc=2E312F" width="640" height="480"></iframe>
+        </article>
+
+        <article class="formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="" method="post">
+                <div class="form__conjunto">
+                    <div class="conjunto">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" placeholder="Pepe" required>
+                    </div>
+
+                    <div class="conjunto">
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" id="apellido" placeholder="Gomez" required>
+                    </div>
+                </div>
+
+                <div class="form__conjunto">
+                    <div class="conjunto">
+                        <label for="telefono"> Telefono: </label>
+                        <input type="tel" id="telefono" placeholder="+54 9 11 2233-4455" required>
+                    </div>
+
+                    <div class="conjunto">
+                        <label for="email" >Email: </label>
+                        <input type="email" id="email" placeholder="ejemplo@gmail.com">
+                    </div>
+                </div>
+
+                <div class="form__conjunto--triple ">
+                    <div class="conjunto__triple">
+                        <label for="producto">Producto</label>
+                        <select name="producto" id="producto" required>
+                            <option value="">-</option>
+                            <option value="">Sticker</option>
+                            <option value="">Prenda</option>
+                            <option value="">Sticker + Prenda</option>
+                        </select>
+                    </div>
+                    <div class="conjunto__triple talle" >    
+                        <label for="talle">Talle</label>
+                        <select name="talle" id="talle" >
+                            <option value="">-</option>
+                            <option value="">XS</option>
+                            <option value="">S</option>
+                            <option value="">M</option>
+                            <option value="">L</option>
+                            <option value="">XL</option>
+                        </select>
+                    </div>
+                    <div class="conjunto__triple">
+                        <label for="cantidad">Cantidad </label>
+                        <input class="form__abajo--input" type="number" id="cantidad" placeholder="Cantidad" required>
+                    </div>
+                </div>
+                <div class="form__conjunto--comentario ">
+                    <label for="mensaje">Comentario</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Contanos tu idea de personalización"></textarea>
+                </div>
+                <div class="boton2">
+                    <input class="boton2--input" type="submit" value="Enviar">
+                </div>
+            </form>
+        </article>
+
+        <footer>
+            <div class="footer__contenedor">
+                <div class="footer__logo">
+                    <a href="../index.html"><img src="../assets/img/logopagina.png" alt="Logo del Taller"></a>
+                </div>
+                <div class="footer__map">
+                    <ul class="footer__map--ul">
+                        <li class="footer__map--li"><a href="../index.html">Inicio</a></li>
+                        <li class="footer__map--li"><a href="./sticker.html">Sticker</a></li>
+                        <li class="footer__map--li"><a href="./prendas.html">Prendas</a></li>
+                        <li class="footer__map--li"><a href="./clientes.html">Clientes</a></li>
+                        <li class="footer__map--li"><a href="./quienessomos.html">Quienes somos</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__redes">
+                    <h3>Redes</h3>
+                    <ul class="footer__redes--ul">
+                        <li class="footer__redes--li"><a href="https://wa.me/5491121893225?text=Hola,%20¡Quiero%20pedirte%20un%20producto%20personalizado!" target="_blank" > <img src="../assets/img/WhatsApp.svg.png" alt="Chat WhatsApp"class="img_footer_wh"></a></li>
+                        <li class="footer__redes--li"><a href="https://www.instagram.com/tallerojosdepapel/" target="_blank"><img  src="../assets/img/instagram.png" alt="Logo de instagram" class="img_footer_ig"></a></li>
+                    </ul>
+    
+                </div>
+            </div>
+            <h4>© 2021 Taller Ojos de Papel | Nicolas Graeff</h4>
+        </footer>
+        
+    </main>
+</body>
+</html>
