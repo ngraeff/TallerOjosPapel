@@ -20,23 +20,16 @@
 
     <header>
         <!-- Menu de navegacion del proyecto con lista no ordenada -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary color-transparente">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled">Disabled</a>
-                    </div>
-                </div>
-            </div>
+        <nav>
+            <a href="./index.html"><img class="header__img" src="./assets/img/logopagina.png" alt="Logo del taller"></a>
+            <!-- Navbarr -->
+            <ul class="navbar">
+                <li class="navbar__items"><a href="./index.html">Inicio</a></li>
+                <li class="navbar__items"><a href="./pages/sticker.html">Sticker</a></li>
+                <li class="navbar__items"><a href="./pages/prendas.html">Prendas</a></li>
+                <li class="navbar__items"><a href="./pages/clientes.html">Clientes</a></li>
+                <li class="navbar__items"><a href="./pages/quienessomos.html">Quienes somos</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -53,20 +46,46 @@
 
         <article class="carrusel">
             <!-- La idea es hacer un carrusel donde las imagenes vayan pasandose -->
-            <div class="carrusel__contenedor">
-                <img class="carrusel__img" src="./assets/img/remera_3_personas.webp"
-                    alt=" Imagen de 3 clientes con remera">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/remera_3_personas.webp" class="d-block w-100" alt=" Imagen de 3 clientes con remera">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/remera_belleza.webp" class="d-block w-100" alt="Imagen de 2 remeras">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/remera_esencial_ojos.webp" class="d-block w-100" alt="Imagen de cliente con remera">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/remera_ajedres.webp" class="d-block w-100" alt="Imagen de cliente con remera">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carrusel__contenedor">
-                <img class="carrusel__img" src="./assets/img/remera_belleza.webp" alt="Imagen de 2 remeras">
-            </div>
-            <div class="carrusel__contenedor">
-                <img class="carrusel__img" src="./assets/img/remera_esencial_ojos.webp"
-                    alt="Imagen de cliente con remera">
-            </div>
-            <div class="carrusel__contenedor">
-                <img class="carrusel__img" src="./assets/img/remera_ajedres.webp" alt="Imagen de cliente con remera">
-            </div>
+
+
+
+
         </article>
 
         <h2 class="proyecto__title">Algunos proyectos destacados</h2>
