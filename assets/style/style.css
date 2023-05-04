@@ -17,6 +17,9 @@ header{
     top: 0;
     left: 0;
 }
+.color-transparente{
+    background-color: rgba(102, 104, 105, 0.685);
+}
 
 /* Navbar con Flexbox, despues de la primera pre-entrega voy a optar por esta forma */
 nav{
