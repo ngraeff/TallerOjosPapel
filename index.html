@@ -19,17 +19,36 @@
 <body>
 
     <header>
-        <!-- Menu de navegacion del proyecto con lista no ordenada -->
-        <nav>
-            <a href="./index.html"><img class="header__img" src="./assets/img/logopagina.png" alt="Logo del taller"></a>
-            <!-- Navbarr -->
-            <ul class="navbar">
-                <li class="navbar__items"><a href="./index.html">Inicio</a></li>
-                <li class="navbar__items"><a href="./pages/sticker.html">Sticker</a></li>
-                <li class="navbar__items"><a href="./pages/prendas.html">Prendas</a></li>
-                <li class="navbar__items"><a href="./pages/clientes.html">Clientes</a></li>
-                <li class="navbar__items"><a href="./pages/quienessomos.html">Quienes somos</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg fondo-mio">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/logopagina.png" alt="" class="logo-navbar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-end mar-der" >
+                        <li class="nav-item">
+                            <a class="nav-link  item__estilo--propio " aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle item__estilo--propio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item sub-item__estilo--propio" href="./pages/sticker.html">Sticker</a></li>
+                                <li><a class="dropdown-item sub-item__estilo--propio" href="./pages/prendas.html">Prendas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item__estilo--propio" aria-current="page" href="./pages/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item__estilo--propio" aria-current="page" href="./pages/quienessomos.html">Quienes Somos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -54,21 +73,25 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/remera_3_personas.webp" class="d-block w-100" alt=" Imagen de 3 clientes con remera">
+                    <div class="carousel-item active d-item">
+                        <img src="./assets/img/remera_3_personas.webp" class="d-block w-100 d-img"
+                            alt=" Imagen de 3 clientes con remera">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/remera_belleza.webp" class="d-block w-100" alt="Imagen de 2 remeras">
+                    <div class="carousel-item  d-item">
+                        <img src="./assets/img/remera_belleza.webp" class="d-block w-100 d-img"
+                            alt="Imagen de 2 remeras">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/remera_esencial_ojos.webp" class="d-block w-100" alt="Imagen de cliente con remera">
+                    <div class="carousel-item  d-item">
+                        <img src="./assets/img/remera_esencial_ojos.webp" class="d-block w-100 d-img"
+                            alt="Imagen de cliente con remera">
                     </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/remera_ajedres.webp" class="d-block w-100" alt="Imagen de cliente con remera">
+                    <div class="carousel-item  d-item">
+                        <img src="./assets/img/remera_ajedres.webp" class="d-block w-100 d-img"
+                            alt="Imagen de cliente con remera">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -82,9 +105,6 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-
-
 
         </article>
 
@@ -127,6 +147,7 @@
             </section>
         </article>
     </main>
+
     <footer>
         <div class="footer__contenedor">
             <div class="footer__logo">
@@ -154,14 +175,11 @@
                             target="_blank"><img src="./assets/img/instagram.png" alt="Logo de instagram"
                                 class="img_footer_ig"></a></li>
                 </ul>
-
             </div>
         </div>
         <h4>© 2021 Taller Ojos de Papel | Nicolas Graeff</h4>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 
