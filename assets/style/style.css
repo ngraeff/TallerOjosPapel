@@ -106,7 +106,7 @@ header {
 
 .banner__img {
     width: 35rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 /* ========================================CARRUSEL========================================*/
@@ -290,8 +290,10 @@ footer {
 
 /* LOGO DEL FOOTER */
 .footer__logo {
-
-    padding-left: 3rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__logo img {
@@ -306,7 +308,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 15rem;
-    padding-top: 2rem;
+    padding: 0;
 }
 
 .footer__map--li {
@@ -330,15 +332,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10rem;
-    padding-right: 3rem;
+    width: 20rem;
+    padding-right: 0;
     flex-direction: column;
 }
 
 .footer__redes h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .footer__redes--ul {
@@ -346,29 +348,25 @@ footer {
     align-items: center;
     justify-content: center;
     width: 10rem;
-    padding-top: 2rem;
+    padding: 0;
     display: flex;
     margin: auto;
 }
 
 .footer__redes img {
-    width: 1.8rem;
+    width: 3rem;
     margin: 0 1rem;
     padding: 0.5rem 0.5rem;
     border: solid 0.1rem black;
     border-radius: 40%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .footer__redes img:hover {
-    background-color: #e637bf;
+    background-color: #e637c0b2;
     cursor: pointer;
 }
 
-.footer__redes img:hover {
-    background-color: #e637bf;
-    cursor: pointer;
-}
 
 /*  ========================================CARD-COMPRAS======================================== */
 
@@ -402,9 +400,11 @@ footer {
     width: 100%;
     height: 100%;
 }
+
 .carta__sticker {
     margin: 0 4.2%;
 }
+
 .card .boton {
     border: 0.8rem solid rgb(2, 3, 129);
     background-color: rgb(2, 3, 129);
@@ -893,7 +893,7 @@ footer {
     /* ===================PROYECTOS=============== */
     .proyectos {
         padding-bottom: 2rem;
-        height: 70rem;
+        height: 76rem;
         width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -937,6 +937,7 @@ footer {
     .ventas {
         height: 150rem;
     }
+
     .carta__sticker {
         margin: 0 5rem;
         width: 30%;
@@ -952,15 +953,18 @@ footer {
         justify-content: space-between;
         background-color: #272727;
     }
+
     .personaliza img {
         width: 35%;
         margin: auto;
         padding-left: 1rem;
     }
+
     .contenedor__derecho {
         width: 60%;
         padding-right: 1rem;
     }
+
     .contenedor__derecho h2 {
         color: #fff;
         font-size: 4rem;
@@ -969,27 +973,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-
-    /* ====================NAVBAR====================*/
-    .header__img {
-        display: none;
-        width: 0;
-    }
-
-    .navbar {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .navbar__items {
-        display: inline;
-    }
-
-    .navbar__items a {
-        font-size: 1.1rem;
-    }
 
     /* ===================BANNER=============== */
     .banner__text {
@@ -1014,9 +997,14 @@ footer {
         display: none;
     }
 
+    /* ==== CARRUSEL==== */
+    .d-item {
+        height: 40rem;
+    }
+
     /* ===================PROYECTOS=============== */
     .proyectos {
-        height: 60rem;
+        height: 64rem;
     }
 
     .card {
@@ -1096,7 +1084,7 @@ footer {
     }
 
     .footer__logo img {
-        width: 8rem;
+        width: 7rem;
         align-items: center;
         padding: 0;
     }
@@ -1113,19 +1101,17 @@ footer {
         list-style-type: none;
         align-items: center;
         justify-content: center;
-        width: 15rem;
         padding-top: 0rem;
     }
 
     .footer__map--li {
         text-align: center;
-        margin: 0.5rem 0;
     }
 
     .footer__map--li a {
         text-decoration: none;
         color: #000000;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         transition: 0.3s;
     }
 
@@ -1134,63 +1120,73 @@ footer {
     }
 
     /* REDES SOCIALES */
+    .footer__redes--ul {
+        padding: 0;
+    }
     .footer__redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10rem;
-        padding-right: 0rem;
-        margin-top: 1rem;
-        flex-direction: column;
+        padding-right: 0;
     }
 
     .footer__redes h3 {
-        font-size: 1.3rem;
-        font-weight: 600;
-        margin-top: 1rem;
-        margin-bottom: 0;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
     }
 
-    /*  */
+    .footer__redes--ul {
+        width: 0;
+    }
 
+    .footer__redes img {
+        width: 2.5rem;
+        margin: 0 .6rem;
+        padding: 0.35rem 0.35rem;
+    }
 
-
-
-
+    footer h4 {
+        font-size: 1.2rem;
+    }
 
 
 }
 
-@media screen and (max-width: 400px) {
+/*  */
+
+
+
+
+
+@media screen and (max-width: 430px) {
+
     /* ====BANER==== */
     .banner {
         width: 100%;
         display: inline-block;
     }
+
     .banner__text {
         width: 100%;
         padding-top: 2rem;
     }
-    
+
     .banner__text__title {
         color: #fff;
         font-size: 6rem;
         padding-bottom: 1rem;
         margin-top: 10rem;
     }
-    
+
     .banner__text__eslogan {
         margin-top: 3rem;
         color: #fff;
         font-size: 1.3rem;
     }
-    
+
     .banner__text__eslogan span {
         color: #e637bf;
         font-style: italic;
         font-weight: 600;
     }
-    
+
     .banner__contenedor {
         width: 50%;
         justify-content: center;
@@ -1198,25 +1194,18 @@ footer {
         display: flex;
         margin: auto;
     }
-    
+
     .banner__img {
         width: 35rem;
         margin-top: 8rem;
     }
+
     /* ====CARRUSEL==== */
-    .carrusel {
-        margin-bottom: 3rem;
-        
-    }
-    
+
     .d-item {
         height: 30rem;
     }
-    .d-img {
-        width: 10%;
-        height: 100%;
-        object-fit: cover;
-    }
+
     /*====PROYECTOS ====  */
     .proyectos {
         height: 100rem;
@@ -1225,36 +1214,80 @@ footer {
         align-items: center;
         justify-content: center;
     }
-    
+
     .proyecto__title {
         font-size: 3rem;
         display: block;
         text-align: center;
     }
-    
+
     /*  ========================================CARD=================================*/
     .card {
         width: 13rem;
         height: 20rem;
-        margin: 0;
+        margin: 2rem;
     }
+
     .card_proyectos h3 br {
         display: none;
     }
-    
+
     .card__text {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .card__title {
         font-size: 1rem;
     }
+
     .card__pie p {
         font-size: .7rem;
         margin-bottom: 1rem;
         padding: 0 1rem;
         text-align: center;
     }
+
+
+    /* =============================FOOTER================= */
+    footer {
+        height: 30rem;
+    }
+
+
+    /* LOGO DEL FOOTER */
+    .footer__logo img {
+        width: 6rem;
+
+    }
+
+    /* MAPA DE PAGINA */
+    .footer__map--li a {
+        font-size: 1.3rem;
+    }
+
+    /* REDES SOCIALES */
+    .footer__redes h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer__redes h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__redes img {
+        width: 2.3rem;
+        margin: 0 .3rem;
+        padding: 0.3rem 0.3rem;
+    }
+
+    footer h4 {
+        font-size: 1rem;
+    }
+
+
 }
