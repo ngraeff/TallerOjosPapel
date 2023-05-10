@@ -401,7 +401,7 @@ footer {
     height: 100%;
 }
 
-.carta__sticker {
+.carta__producto {
     margin: 0 4.2%;
 }
 
@@ -890,6 +890,15 @@ footer {
         width: 20rem
     }
 
+    .banner_break {
+        display: none;
+    }
+
+    /* ==== CARRUSEL==== */
+    .d-item {
+        height: 35rem;
+    }
+
     /* ===================PROYECTOS=============== */
     .proyectos {
         padding-bottom: 2rem;
@@ -935,12 +944,12 @@ footer {
 
     /* ========================Ventas======================== */
     .ventas {
-        height: 150rem;
+        height: auto;
     }
 
-    .carta__sticker {
-        margin: 0 5rem;
-        width: 30%;
+    .carta__producto {
+        margin: 4rem;
+        width: 18rem;
     }
 
 
@@ -1123,6 +1132,7 @@ footer {
     .footer__redes--ul {
         padding: 0;
     }
+
     .footer__redes {
         padding-right: 0;
     }
@@ -1146,14 +1156,77 @@ footer {
         font-size: 1.2rem;
     }
 
+    /* ====STICKER.HTML  VENTAS ====*/
+    .ventas {
+        height: auto;
+    }
+
+    .ventas__title {
+        font-size: 2.6rem;
+
+    }
+
+    .ventas__text {
+        font-size: 1.3rem;
+    }
+
+    .carta__producto {
+        width: 15rem;
+        margin: 1.5rem;
+    }
+
+    .carta__producto img {
+        height: 70%;
+    }
+
+    .carta__producto .card__pie {
+        height: 30%;
+    }
+
+    .carta__producto .card__title {
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card .boton {
+        border: 0.5rem solid rgb(2, 3, 129);
+        font-size: .8rem;
+    }
+
+    .boton__ventas {
+        padding: .5rem;
+        font-size: .8rem;
+    }
+
+    /* ====PERSONALIZA==== */
+
+    .personaliza {
+        height: 40rem;
+    }
+
+    .personaliza img {
+        display: none;
+    }
+
+    .contenedor__derecho {
+        width: 100%;
+        margin: auto;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .contenedor__derecho h2 {
+        font-size: 4rem;
+        text-align: center;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .contenedor__derecho a {
+        font-size: 1rem;
+    }
 
 }
-
-/*  */
-
-
-
-
 
 @media screen and (max-width: 430px) {
 
@@ -1161,6 +1234,10 @@ footer {
     .banner {
         width: 100%;
         display: inline-block;
+    }
+
+    .banner_break {
+        display: inline;
     }
 
     .banner__text {
@@ -1288,6 +1365,36 @@ footer {
     footer h4 {
         font-size: 1rem;
     }
+
+
+        /* ====PERSONALIZA==== */
+
+        .personaliza {
+            height: 30rem;
+        }
+    
+        .personaliza img {
+            display: none;
+        }
+    
+        .contenedor__derecho {
+            width: 100%;
+            margin: auto;
+            padding-right: 0;
+            align-items: center;
+        }
+    
+        .contenedor__derecho h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            justify-content: center;
+            padding: 0 .5rem;
+        }
+        .contenedor__derecho a {
+            font-size: .8rem;
+            padding: .6rem 1rem;
+        }
+        
 
 
 }
