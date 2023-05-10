@@ -1325,7 +1325,13 @@ footer {
         text-align: center;
     }
 
-
+    /* ====CARD PRODUCTOS==== */
+    /*  Si quiero que en el mobile me aparezcan 2 cartas al lado een vez de una abajo de otra
+    No se bien cual usar*/
+    .carta__producto {
+        width: 10rem;
+        margin: 1rem;
+    }
     /* =============================FOOTER================= */
     footer {
         height: 30rem;
