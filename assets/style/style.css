@@ -68,6 +68,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
 
 }
@@ -81,7 +82,7 @@ header {
     color: #fff;
     font-size: 8rem;
     padding-bottom: 1rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .banner__text__eslogan {
@@ -94,6 +95,9 @@ header {
     color: #e637bf;
     font-style: italic;
     font-weight: 600;
+}
+.banner__text__eslogan br{
+    display: none;
 }
 
 .banner__contenedor {
@@ -492,11 +496,14 @@ footer {
 .clientes_felices {
     height: 100vh;
     width: 100%;
-    padding-top: 12rem;
+    padding-top: 2rem;
     background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../img/background.jpg);
     /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .clientes_felices__title {
@@ -508,7 +515,7 @@ footer {
 }
 
 .clientes_felices__text {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     color: #fff;
     padding: 0rem 6rem;
@@ -524,7 +531,7 @@ footer {
 /*======================================== COMENTARIOS ======================================== */
 .comentarios_clientes {
     width: 100%;
-    height: 136rem;
+    height: auto;
 
 }
 
@@ -532,13 +539,14 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 2rem 0;
 }
 
 .comentario p {
     width: 55%;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     text-align: justify;
     padding: 0 5rem;
@@ -549,7 +557,7 @@ footer {
 }
 
 .comentario img {
-    width: 28rem;
+    width: 26rem;
     border-radius: 2rem;
     margin: 3rem;
 }
@@ -974,6 +982,56 @@ footer {
         font-size: 4rem;
         text-align: end;
     }
+
+    /*======================================== CLIENTES FELICES ========================================*/
+
+    .clientes_felices__title {
+        font-size: 5.5rem;
+        margin-bottom: 4rem;
+        padding: 0rem 2rem;
+    }
+
+    .clientes_felices__text {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;
+        padding: 0rem 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .clientes_felices__text span {
+        font-weight: 600;
+        color: #e637bf;
+        font-style: italic;
+    }
+    /* ====CLIENTES  COMENTARIOS ==== */
+    .comentarios_clientes {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    .comentario {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .comentario p {
+        margin: 2rem;
+        font-size: 1rem;
+        padding: 0;
+    }
+    .comentario p span {
+        font-weight: 600;
+    }
+    .comentario img {
+        width: 15rem;
+        border-radius: 2rem;
+        margin: 0;
+    }
+    .comentario .yoga {
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1223,7 +1281,60 @@ footer {
     .contenedor__derecho a {
         font-size: 1rem;
     }
+    /*======================================== CLIENTES FELICES ========================================*/
 
+    .clientes_felices {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clientes_felices__title {
+        font-size: 4rem;
+        margin: 5rem 0;
+        padding: 0rem 2rem;
+        text-align: center;
+    }
+
+    .clientes_felices__text {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0rem 2rem;
+    }
+    /*======================================== COMENTARIOS ======================================== */
+    .comentarios_clientes{
+        padding: 0;    
+        margin-bottom: 4rem;
+    }
+
+    .comentario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .comantario__yoga{
+        flex-direction: column-reverse;
+    }
+
+    .comentario p {
+        width: 100%;
+        margin: 3rem 0;
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0 5rem;
+    }
+
+    .comentario p span {
+        font-weight: 600;
+    }
+
+    .comentario img {
+        width: 13rem;
+        border-radius: 2rem;
+        
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1398,7 +1509,22 @@ footer {
             font-size: .8rem;
             padding: .6rem 1rem;
         }
-        
-
-
+    /*======================================== CLIENTES FELICES ========================================*/
+    .clientes_felices__title {
+        font-size: 3rem;
+    }
+    .clientes_felices__text {
+        text-align: center;
+        font-size: .8rem;
+    }
+    /*======================================== COMENTARIOS ======================================== */
+    .comentario p {
+        font-size: .8rem;
+        text-align: center;
+    }
+    .comentario img {
+        width: 10rem;
+    }
 }
+
+
