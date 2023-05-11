@@ -5,10 +5,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
 
-/* =========================szzz===============NAVBAR======================================== */
+/* ========================================NAVBAR======================================== */
 header {
     background-color: rgba(102, 104, 105, 0.685);
     position: fixed;
@@ -68,6 +69,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
 
 }
@@ -81,7 +83,7 @@ header {
     color: #fff;
     font-size: 8rem;
     padding-bottom: 1rem;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .banner__text__eslogan {
@@ -95,6 +97,9 @@ header {
     font-style: italic;
     font-weight: 600;
 }
+.banner__text__eslogan br{
+    display: none;
+}
 
 .banner__contenedor {
     width: 50%;
@@ -106,7 +111,7 @@ header {
 
 .banner__img {
     width: 35rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 /* ========================================CARRUSEL========================================*/
@@ -290,8 +295,10 @@ footer {
 
 /* LOGO DEL FOOTER */
 .footer__logo {
-
-    padding-left: 3rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__logo img {
@@ -306,7 +313,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 15rem;
-    padding-top: 2rem;
+    padding: 0;
 }
 
 .footer__map--li {
@@ -330,15 +337,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10rem;
-    padding-right: 3rem;
+    width: 20rem;
+    padding-right: 0;
     flex-direction: column;
 }
 
 .footer__redes h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .footer__redes--ul {
@@ -346,35 +353,31 @@ footer {
     align-items: center;
     justify-content: center;
     width: 10rem;
-    padding-top: 2rem;
+    padding: 0;
     display: flex;
     margin: auto;
 }
 
 .footer__redes img {
-    width: 1.8rem;
+    width: 3rem;
     margin: 0 1rem;
     padding: 0.5rem 0.5rem;
     border: solid 0.1rem black;
     border-radius: 40%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .footer__redes img:hover {
-    background-color: #e637bf;
+    background-color: #e637c0b2;
     cursor: pointer;
 }
 
-.footer__redes img:hover {
-    background-color: #e637bf;
-    cursor: pointer;
-}
 
 /*  ========================================CARD-COMPRAS======================================== */
 
 .ventas {
     width: 100%;
-    height: 100rem;
+    height: auto;
     padding-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -402,9 +405,11 @@ footer {
     width: 100%;
     height: 100%;
 }
-.carta__sticker {
-    margin: 0 4.2%;
+
+.carta__producto {
+    margin: 2rem 4.2%;
 }
+
 .card .boton {
     border: 0.8rem solid rgb(2, 3, 129);
     background-color: rgb(2, 3, 129);
@@ -483,25 +488,26 @@ footer {
 }
 
 /*======================================== BUZOS ========================================*/
-.ventas__buzos {
-    width: 100%;
-    height: 60rem;
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ventas__buzos{
+    padding-top: 2.5rem;
 }
 
 /*======================================== CLIENTES FELICES ========================================*/
-
+.not_scroll{
+    overflow-x:hidden 
+    /* Tuve que agregar este hidden porue la animacion me genera un scroll en el eje X */
+}
 .clientes_felices {
     height: 100vh;
     width: 100%;
-    padding-top: 12rem;
+    padding-top: 2rem;
     background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../img/background.jpg);
     /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .clientes_felices__title {
@@ -513,7 +519,7 @@ footer {
 }
 
 .clientes_felices__text {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     color: #fff;
     padding: 0rem 6rem;
@@ -529,7 +535,7 @@ footer {
 /*======================================== COMENTARIOS ======================================== */
 .comentarios_clientes {
     width: 100%;
-    height: 136rem;
+    height: auto;
 
 }
 
@@ -537,13 +543,14 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 2rem 0;
 }
 
 .comentario p {
     width: 55%;
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     text-align: justify;
     padding: 0 5rem;
@@ -554,7 +561,7 @@ footer {
 }
 
 .comentario img {
-    width: 28rem;
+    width: 26rem;
     border-radius: 2rem;
     margin: 3rem;
 }
@@ -595,7 +602,7 @@ footer {
 
 .nuestro_taller {
     width: 100%;
-    height: 45rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -639,6 +646,7 @@ footer {
     border-radius: 2rem;
     padding: .8rem 1rem;
     margin-top: 1rem;
+    margin-bottom: 3rem;
     transition: all .3s ease;
 }
 
@@ -671,12 +679,10 @@ footer {
 }
 
 .reloj {
-    width: 11rem;
+    width: 15rem;
     margin: 1rem;
     padding-left: 5rem;
 }
-
-/* Lo hago separado porque tienen distintos tamaños las img */
 .calendario {
     width: 15rem;
 }
@@ -718,7 +724,7 @@ footer {
 /*======================================== FORMULARIO ========================================*/
 .formulario {
     width: 100%;
-    height: 60rem;
+    height: 55rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -735,7 +741,7 @@ footer {
     background-color: #706f6f;
     border-radius: 2rem;
     width: 45%;
-    height: 65%;
+    height: 72% ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -752,17 +758,27 @@ footer {
 }
 
 .form__conjunto .conjunto {
+    width: 80%;
     color: #fff;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.conjunto_der{
+    align-items: end;
 }
 
+.conjunto label{
+    margin: 0 .5rem;
+}
 .form__conjunto .conjunto input {
-    width: 12rem;
+    width: 75%;
     height: 2rem;
+    text-align: center;
     border-radius: 1rem;
     border: none;
-    padding: 0 0 0 1rem;
-    margin: 0 0 0 1rem;
     font-size: .8rem;
 }
 
@@ -890,10 +906,19 @@ footer {
         width: 20rem
     }
 
+    .banner_break {
+        display: none;
+    }
+
+    /* ==== CARRUSEL==== */
+    .d-item {
+        height: 35rem;
+    }
+
     /* ===================PROYECTOS=============== */
     .proyectos {
         padding-bottom: 2rem;
-        height: 70rem;
+        height: 76rem;
         width: 100%;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -935,11 +960,12 @@ footer {
 
     /* ========================Ventas======================== */
     .ventas {
-        height: 150rem;
+        height: auto;
     }
-    .carta__sticker {
-        margin: 0 5rem;
-        width: 30%;
+
+    .carta__producto {
+        margin: 4rem;
+        width: 18rem;
     }
 
 
@@ -952,44 +978,216 @@ footer {
         justify-content: space-between;
         background-color: #272727;
     }
+
     .personaliza img {
         width: 35%;
         margin: auto;
         padding-left: 1rem;
     }
+
     .contenedor__derecho {
         width: 60%;
         padding-right: 1rem;
     }
+
     .contenedor__derecho h2 {
         color: #fff;
         font-size: 4rem;
         text-align: end;
     }
-}
 
-@media screen and (max-width: 800px) {
+    /*======================================== CLIENTES FELICES ========================================*/
 
-    /* ====================NAVBAR====================*/
-    .header__img {
-        display: none;
-        width: 0;
+    .clientes_felices__title {
+        font-size: 5.5rem;
+        margin-bottom: 4rem;
+        padding: 0rem 2rem;
     }
 
-    .navbar {
+    .clientes_felices__text {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #fff;
+        padding: 0rem 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .clientes_felices__text span {
+        font-weight: 600;
+        color: #e637bf;
+        font-style: italic;
+    }
+    /* ====CLIENTES  COMENTARIOS ==== */
+    .comentarios_clientes {
         width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+    .comentario {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .comentario p {
+        margin: 2rem;
+        font-size: 1rem;
+        padding: 0;
+    }
+    .comentario p span {
+        font-weight: 600;
+    }
+    .comentario img {
+        width: 15rem;
+        border-radius: 2rem;
+        margin: 0;
+    }
+    .comentario .yoga {
+        margin-left: 0;
+    }
+    /* ==== EQUIPO==== */
+
+    .equipo {
+        height: auto;
+    }
+    .card_equipo{
+        height: 25rem;
+        width: 15rem;
+    }
+    .equipo__title {
+        margin-top: 10rem;
+    }
+    .card__title{
+        font-size: 1.3rem;
+    }
+    /* ==== NUESTRO TALLER==== */
+    .nuestro_taller__title {
+        font-size: 2.4rem;
+    }
+    .nuestro_taller__text {
+        font-size: 1.3rem;
+        padding: 0 5rem;
+    }
+    .nuestro_taller__cierre {
+        font-size: 1.3rem;
+        padding: 0 10rem;
+    }
+    
+    /* ==== HORARIOS==== */ 
+    .horarios h2 {
+        font-size: 2.4rem;
+    }
+    .reloj {
+        width: 13rem;
+        margin: 1rem;
+        padding-left: 5rem;
+    }
+    .calendario {
+        width: 13rem;
+    }
+    
+    .horarios h3 {
+        font-size: 1.7rem;
+    }
+    /* ====MAPA==== */
+    .mapa {
+        width: 100%;
+        height: 60rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        background-color: #706f6f;
+    
+    }
+    
+    .mapa h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    
+    .mapa iframe {
+        width: 80%;
+        height: 40rem;
+        margin: 2rem;
+    }
+    /* ====FORMULARIO==== */
+    .formulario {
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .formulario h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    
+    .formulario form {
+        width: 80%;
+        padding: 2.5rem;
+    }
+    
+    .form__conjunto .conjunto {
+        width: 40%;
+        font-size: 1rem;
+        justify-content: center;
         align-items: center;
     }
+    
+    .form__conjunto .conjunto input {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 1rem 0;
+        font-size: .8rem;
+    }
+    
+    .form__conjunto--triple .conjunto__triple {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    
+    .form__conjunto--triple {
+        width: 100%;
+    }
+    .form__conjunto--triple select {
+        width: 100%;
+    }
+    .form__conjunto--triple .talle select {
+        width: 40%;
+    }
+    
+    .form__conjunto--triple input {
+        width: 100%;
+        height: 2rem;
+    }
+    
+    .boton2 {
+        padding-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+    
+    }
+    
+    .boton2--input {
+        font-size: .8rem;
+        padding: .4rem .6rem;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
 
-    .navbar__items {
-        display: inline;
+
+
+
     }
 
-    .navbar__items a {
-        font-size: 1.1rem;
-    }
+@media screen and (max-width: 800px) {
 
     /* ===================BANNER=============== */
     .banner__text {
@@ -1014,14 +1212,22 @@ footer {
         display: none;
     }
 
+    /* ==== CARRUSEL==== */
+    .d-item {
+        height: 40rem;
+    }
+
     /* ===================PROYECTOS=============== */
     .proyectos {
-        height: 60rem;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .card {
-        width: 70%;
+        width: 15rem;
         height: 24rem;
+        margin: 2rem;
     }
 
     .card img {
@@ -1096,7 +1302,7 @@ footer {
     }
 
     .footer__logo img {
-        width: 8rem;
+        width: 7rem;
         align-items: center;
         padding: 0;
     }
@@ -1113,19 +1319,17 @@ footer {
         list-style-type: none;
         align-items: center;
         justify-content: center;
-        width: 15rem;
         padding-top: 0rem;
     }
 
     .footer__map--li {
         text-align: center;
-        margin: 0.5rem 0;
     }
 
     .footer__map--li a {
         text-decoration: none;
         color: #000000;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         transition: 0.3s;
     }
 
@@ -1134,31 +1338,617 @@ footer {
     }
 
     /* REDES SOCIALES */
+    .footer__redes--ul {
+        padding: 0;
+    }
+
     .footer__redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10rem;
-        padding-right: 0rem;
-        margin-top: 1rem;
-        flex-direction: column;
+        padding-right: 0;
     }
 
     .footer__redes h3 {
-        font-size: 1.3rem;
-        font-weight: 600;
-        margin-top: 1rem;
-        margin-bottom: 0;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
     }
 
-    /*  */
+    .footer__redes--ul {
+        width: 0;
+    }
+
+    .footer__redes img {
+        width: 2.5rem;
+        margin: 0 .6rem;
+        padding: 0.35rem 0.35rem;
+    }
+
+    footer h4 {
+        font-size: 1.2rem;
+    }
+
+    /* ====STICKER.HTML  VENTAS ====*/
+    .ventas {
+        height: auto;
+    }
+
+    .ventas__title {
+        font-size: 2.6rem;
+
+    }
+
+    .ventas__text {
+        font-size: 1.3rem;
+    }
+
+    .carta__producto {
+        width: 15rem;
+        margin: 1.5rem;
+    }
+
+    .carta__producto img {
+        height: 70%;
+    }
+
+    .carta__producto .card__pie {
+        height: 30%;
+    }
+
+    .carta__producto .card__title {
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card .boton {
+        border: 0.5rem solid rgb(2, 3, 129);
+        font-size: .8rem;
+    }
+
+    .boton__ventas {
+        padding: .5rem;
+        font-size: .8rem;
+    }
+
+    /* ====PERSONALIZA==== */
+
+    .personaliza {
+        height: 40rem;
+    }
+
+    .personaliza img {
+        display: none;
+    }
+
+    .contenedor__derecho {
+        width: 100%;
+        margin: auto;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .contenedor__derecho h2 {
+        font-size: 4rem;
+        text-align: center;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .contenedor__derecho a {
+        font-size: 1rem;
+    }
+    /*======================================== CLIENTES FELICES ========================================*/
+
+    .clientes_felices {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clientes_felices__title {
+        font-size: 4rem;
+        margin: 5rem 0;
+        padding: 0rem 2rem;
+        text-align: center;
+    }
+
+    .clientes_felices__text {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0rem 2rem;
+    }
+    /*======================================== COMENTARIOS ======================================== */
+    .comentarios_clientes{
+        padding: 0;    
+        margin-bottom: 4rem;
+    }
+
+    .comentario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .comantario__yoga{
+        flex-direction: column-reverse;
+    }
+
+    .comentario p {
+        width: 100%;
+        margin: 3rem 0;
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0 5rem;
+    }
+
+    .comentario p span {
+        font-weight: 600;
+    }
+
+    .comentario img {
+        width: 13rem;
+        border-radius: 2rem;   
+    }
+
+    /* ==== EQUIPO==== */
+    .equipo{
+        margin-bottom: 1rem;
+    }
+    .card_equipo{
+        margin: 2rem 4rem;
+        height: 23rem;
+        width: 14rem;
+    }
+    .card_equipo img{
+        height: 65%;
+    }
+    .card_equipo .card__pie{
+        height:35%
+    }
+    .equipo__title {
+        margin-top: 10rem;
+        font-size: 2.2rem;
+    }
+    .card__title{
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+    }
+    .card__pie p{
+        font-size: 1rem;
+    }
+    
+    /* ==== NUESTRO TALLER==== */
+    .nuestro_taller__title {
+        font-size: 2.2rem;
+    }
+    .nuestro_taller__text {
+        font-size: 1.1rem;
+        padding: 0 2rem;
+    }
+    .nuestro_taller__cierre {
+        font-size: 1.2rem;
+    }
+    /* ==== HORARIOS==== */ 
+    .horarios h2 {
+        font-size: 2.2rem;
+    }
+    .reloj {
+        width: 12rem;
+
+    }
+    .calendario {
+        width: 11rem;
+    }
+    
+    .horarios h3 {
+        font-size: 1.5rem;
+    }
+    /* ====MAPA==== */
+    .mapa {
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #706f6f;
+    
+    }
+    
+    .mapa h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .mapa iframe {
+        width: 80%;
+        height: 40rem;
+        margin: 3rem;
+    }
+    /* ====FORMULARIO==== */
+    .formulario {
+        height: auto;
+        margin-bottom: 3rem;
+}
+    
+    .formulario h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    
+    .formulario form {
+        width: 80%;
+        padding: 1.5rem;
+        
+    }
+    .form__conjunto{
+        flex-direction: column;
+        width: 100%;
+    }
+    .form__conjunto .conjunto {
+        width: 80%;
+    }
+    
+    .form__conjunto--triple .conjunto__triple {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .form__conjunto--triple {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form__conjunto--triple .talle select {
+        width: 50%;
+    }
+    
+    .form__conjunto--triple label{
+        margin: .5rem;
+    }
+    
+    
+    .boton2--input {
+        font-size: .6rem;
+        padding: .3rem .6rem;
+    }
+}
 
 
 
 
 
+@media screen and (max-width: 430px) {
+
+    /* ====BANER==== */
+    .banner {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .banner_break {
+        display: inline;
+    }
+
+    .banner__text {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .banner__text__title {
+        color: #fff;
+        font-size: 6rem;
+        padding-bottom: 1rem;
+        margin-top: 10rem;
+    }
+
+    .banner__text__eslogan {
+        margin-top: 3rem;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .banner__text__eslogan span {
+        color: #e637bf;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .banner__contenedor {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+    .banner__img {
+        width: 35rem;
+        margin-top: 8rem;
+    }
+
+    /* ====CARRUSEL==== */
+
+    .d-item {
+        height: 30rem;
+    }
+
+    /*====PROYECTOS ====  */
+    .proyectos {
+        height: 100rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proyecto__title {
+        font-size: 3rem;
+        display: block;
+        text-align: center;
+    }
+
+    /*  ========================================CARD=================================*/
+    .card {
+        width: 13rem;
+        height: 20rem;
+        margin: 2rem;
+    }
+
+    .card_proyectos h3 br {
+        display: none;
+    }
+
+    .card__text {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__title {
+        font-size: 1rem;
+    }
+
+    .card__pie p {
+        font-size: .7rem;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    /* ====CARD PRODUCTOS==== */
+    .carta__producto {
+        width: 10rem;
+        margin: 1rem;
+    }
+    /* =============================FOOTER================= */
+    footer {
+        height: 30rem;
+    }
+
+
+    /* LOGO DEL FOOTER */
+    .footer__logo img {
+        width: 6rem;
+
+    }
+
+    /* MAPA DE PAGINA */
+    .footer__map--li a {
+        font-size: 1.3rem;
+    }
+
+    /* REDES SOCIALES */
+    .footer__redes h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer__redes h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__redes img {
+        width: 2.3rem;
+        margin: 0 .3rem;
+        padding: 0.3rem 0.3rem;
+    }
+
+    footer h4 {
+        font-size: 1rem;
+    }
+
+
+    /* ====PERSONALIZA==== */
+
+    .personaliza {
+        height: 30rem;
+    }
+
+    .personaliza img {
+        display: none;
+    }
+
+    .contenedor__derecho {
+        width: 100%;
+        margin: auto;
+        padding-right: 0;
+        align-items: center;
+    }
+
+    .contenedor__derecho h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        justify-content: center;
+        padding: 0 .5rem;
+    }
+    .contenedor__derecho a {
+        font-size: .8rem;
+        padding: .6rem 1rem;
+    }
+    /*======================================== CLIENTES FELICES ========================================*/
+
+    .clientes_felices__title {
+        font-size: 3rem;
+    }
+    .clientes_felices__text {
+        text-align: center;
+        font-size: .8rem;
+    }
+    /*======================================== COMENTARIOS ======================================== */
+
+    .comentario p {
+        font-size: .8rem;
+        text-align: center;
+        
+    }
+    .comentario img {
+        width: 10rem;
+    }
+    /* ==== NUESTRO TALLER==== */
+    .nuestro_taller__title {
+        font-size: 2.2rem;
+    }
+    .nuestro_taller__text {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .nuestro_taller__cierre {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .nuestro_taller__boton{
+    font-size: .8rem;
+    padding: .6rem .8rem;
+
+    }
+
+    /* ==== HORARIOS==== */ 
+
+    .horarios {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas:
+            "titulo"
+            "horarios"
+            "dias";
+    }
+
+    .dias--section{
+        grid-area:dias;
+        display: flex;
+        flex-direction: column;
+    }
+    .horario--section{
+        grid-area: horarios;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    
+    .horarios h2 {
+        grid-area: titulo;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    .reloj {
+        grid-area: dias_img;
+        width: 6rem;
+        margin: 0;
+        padding: 0;
+
+    }
+    .calendario {
+        grid-area: dias_img;
+        width: 9rem;
+    }
+    
+    .horarios h3 {
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+    /* ====MAPA==== */
+    .mapa {
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #706f6f;
+    
+    }
+    
+    .mapa h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .mapa iframe {
+        width: 80%;
+        height: 40rem;
+        margin: 3rem;
+    }
+    /* ====FORMULARIO==== */
+    .formulario {
+        height: auto;
+        margin-bottom: 3rem;
+}
+    
+    .formulario h2 {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    
+    .formulario form {
+        width: 80%;
+        padding: 1.5rem;
+        
+    }
+    .form__conjunto{
+        flex-direction: column;
+        width: 100%;
+    }
+    .form__conjunto .conjunto {
+        width: 80%;
+    }
+    
+    .form__conjunto--triple .conjunto__triple {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    .form__conjunto--triple {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form__conjunto--triple .talle select {
+        width: 50%;
+    }
+    
+    .form__conjunto--triple label{
+        margin: .5rem;
+    }
+    
+    
+    .boton2--input {
+        font-size: .6rem;
+        padding: .3rem .6rem;
+    }
 
 
 }
 
-@media screen and (max-width: 400px) {}
+
