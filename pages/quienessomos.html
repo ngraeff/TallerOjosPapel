@@ -50,21 +50,21 @@
     <main>
         <h2 class="equipo__title">Nuestro Equipo</h2>
         <article class="equipo">
-            <section class="card">
+            <section class="card card_equipo">
                 <img src="../assets/img/persona1.webp" alt="Imagen de persona">
                 <div class="card__pie">
                     <h4 class="card__title">Nallibe</h4>
                     <p class="card__puesto" >Fundadora</p>
                 </div>
             </section>
-            <section class="card">
+            <section class="card card_equipo">
                 <img src="../assets/img/persona.jpeg" alt="Imagen de persona">
                 <div class="card__pie">
                     <h4 class="card__title">Lisandro</h4>
                     <p class="card__puesto">Transportista</p>
                 </div>
             </section>
-            <section class="card">
+            <section class="card card_equipo">
                 <img src="../assets/img/persona.jpeg" alt="Imagen de persona">
                 <div class="card__pie">
                     <h4 class="card__title"> Paz</h4>
@@ -81,11 +81,11 @@
         </article>
         <article class="horarios">
             <h2>Nuestros Horarios</h2>
-            <section>
+            <section class="dias--section">
                 <h3 class="horarios__title">De Lunes a Viernes</h3>
                 <img class="calendario"src="../assets/img/calendario.png" alt="Imagen de un calendario">
             </section>
-            <section>
+            <section class="horario--section">
                 <img class="reloj" src="../assets/img/reloj.png" alt="Imagen de un reloj">
                 <h3 class="horarios__title">De 10:00 a 20:00hs</h3>
             </section>
@@ -100,25 +100,25 @@
             <h2>Formulario de contacto</h2>
             <form action="" method="post">
                 <div class="form__conjunto">
-                    <div class="conjunto">
-                        <label for="nombre">Nombre: </label>
+                    <div class="conjunto conjunto_izq">
+                        <label for="nombre">Nombre </label>
                         <input type="text" id="nombre" placeholder="Pepe" required>
                     </div>
 
-                    <div class="conjunto">
-                        <label for="apellido">Apellido: </label>
+                    <div class="conjunto conjunto_der">
+                        <label for="apellido">Apellido </label>
                         <input type="text" id="apellido" placeholder="Gomez" required>
                     </div>
                 </div>
 
-                <div class="form__conjunto">
+                <div class="form__conjunto conjunto_izq">
                     <div class="conjunto">
-                        <label for="telefono"> Telefono: </label>
+                        <label for="telefono"> Telefono </label>
                         <input type="tel" id="telefono" placeholder="+54 9 11 2233-4455" required>
                     </div>
 
-                    <div class="conjunto">
-                        <label for="email" >Email: </label>
+                    <div class="conjunto conjunto_der">
+                        <label for="email" >Email </label>
                         <input type="email" id="email" placeholder="ejemplo@gmail.com">
                     </div>
                 </div>
