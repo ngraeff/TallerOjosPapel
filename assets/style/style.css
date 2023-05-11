@@ -122,9 +122,8 @@ header {
 .d-item {
     height: 50rem;
 }
-
-.d-img {
-    width: 10%;
+.carousel-item img{
+    max-width: 90%;
     height: 100%;
     object-fit: cover;
 }
