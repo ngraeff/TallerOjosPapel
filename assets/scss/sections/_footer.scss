@@ -1,0 +1,78 @@
+footer{
+    background-color: $color_nav_foot;
+    @include tamaños($ancho_maximo,20rem);
+    position: absolute;
+    /* En el siguiente include se conloca: (propiedad,valor,propiedad1,valor1...) */
+    @include flex-dis(flex-direction,column,justify-content,space-between,align-items,center);
+
+    .footer__contenedor{
+        @include flex-dis(justify-content,space-between,align-items,center);
+        @include tamaños($ancho_maximo,$altura_maxima);
+        margin: auto;
+
+        .footer__logo{
+            width: 20rem;
+            @include flex-dis(justify-content,center,align-items,center);
+            img{
+                width: 10rem;
+                padding: 0;
+            }
+        }
+        .footer__map{
+            .footer__map--ul{
+                width: 15rem;
+                @include flex-dis(justify-content,center,align-items,center,flex-direction,column);
+                padding: 0;
+                list-style-type: none;
+
+                .footer__map--li{
+                    @include text-estilo(text-align,center);
+                    margin: .2rem 0;
+
+                    a{
+                        @include text-estilo(color,#000,text-decoration,none,font-size,1.5rem);
+                        transition: $velocidad_cambio_color;
+                        &:hover{
+                            @include text-estilo(color,$color_contraste);
+                        }
+                    }
+                }
+
+            }
+        }
+        .footer__redes{
+            @include flex-dis(justify-content,space-between,align-items,center,flex-direction,column);
+            width: 20rem;
+            padding-right: 0;
+
+            h3{
+                @include text-estilo(font-size,1.8rem,font-weight,600);
+                margin-bottom: 3rem;
+            }
+            .footer__redes--ul{
+                @include flex-dis(justify-content,center,align-items,center);
+                width: 10rem;
+                padding: 0;
+                margin: auto;
+                list-style-type: none;
+
+                img{
+                    width: 3rem;
+                    margin: 0 1rem;
+                    padding: .5rem  .5rem;
+                    border: solid  .1rem black;
+                    border-radius: 40%;
+                    transition: $velocidad_cambio_color;
+                    &:hover{
+                        background-color: $color_contraste;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+        }   
+    }
+    h4{
+        @include text-estilo(text-align,center,font-size,1.3rem,font-weight,100);
+    }
+}
