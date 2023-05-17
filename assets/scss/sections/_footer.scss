@@ -30,7 +30,7 @@ footer{
                     margin: .2rem 0;
 
                     a{
-                        @include text-estilo(color,#000,text-decoration,none,font-size,1.5rem);
+                        @include text-estilo(color,$color_text_foot,text-decoration,none,font-size,1.5rem);
                         transition: $velocidad_cambio_color;
                         &:hover{
                             @include text-estilo(color,$color_contraste);
@@ -46,7 +46,7 @@ footer{
             padding-right: 0;
 
             h3{
-                @include text-estilo(font-size,1.8rem,font-weight,600);
+                @include text-estilo(font-size,1.8rem,font-weight,600,color,$color_text_foot);
                 margin-bottom: 3rem;
             }
             .footer__redes--ul{
@@ -60,7 +60,7 @@ footer{
                     width: 3rem;
                     margin: 0 1rem;
                     padding: .5rem  .5rem;
-                    border: solid  .1rem black;
+                    border: solid  .1rem #000;
                     border-radius: 40%;
                     transition: $velocidad_cambio_color;
                     &:hover{
@@ -73,6 +73,6 @@ footer{
         }   
     }
     h4{
-        @include text-estilo(text-align,center,font-size,1.3rem,font-weight,100);
+        @include text-estilo(text-align,center,font-size,1.3rem,font-weight,100,color,$color_text_foot);
     }
 }

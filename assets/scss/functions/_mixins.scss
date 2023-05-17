@@ -40,6 +40,9 @@
         @else if $propiedad == font-weight{
             font-weight: nth($propiedades, index($propiedades, $propiedad) + 1);
         }
+        @else if $propiedad== font-style{
+            font-style: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
     }
 }
 

@@ -7,6 +7,60 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+header {
+  background-color: rgba(102, 104, 105, 0.6862745098);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+header .logo-navbar {
+  width: 6rem;
+}
+header .item__estilo--propio {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .item__estilo--propio:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e637bf;
+}
+header .sub-item__estilo--propio {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .sub-item__estilo--propio:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e637bf;
+}
+header .mar-der {
+  margin-right: 2rem;
+}
+
 footer {
   background-color: rgba(102, 104, 105, 0.6862745098);
   height: 20rem;
@@ -121,6 +175,7 @@ footer .footer__contenedor .footer__redes h3 {
   display: flex;
   font-size: 1.8rem;
   font-weight: 600;
+  color: #000;
   margin-bottom: 3rem;
 }
 footer .footer__contenedor .footer__redes .footer__redes--ul {
@@ -142,7 +197,7 @@ footer .footer__contenedor .footer__redes .footer__redes--ul img {
   width: 3rem;
   margin: 0 1rem;
   padding: 0.5rem 0.5rem;
-  border: solid 0.1rem black;
+  border: solid 0.1rem #000;
   border-radius: 40%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -158,4 +213,89 @@ footer h4 {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 100;
+  color: #000;
+}
+
+/* ========================================BANNER======================================== */
+.banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.jpg);
+  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+.banner .banner__text {
+  padding-left: 10rem;
+  margin: auto;
+}
+.banner .banner__text .banner__text--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 8rem;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.banner .banner__text .banner__text--eslogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.banner .banner__text .banner__text--eslogan span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #e637bf;
+  font-style: italic;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.banner .banner__text .banner__text--eslogan br {
+  display: none;
+}
+.banner .banner__contenedor {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+.banner .banner__contenedor .banner__img {
+  width: 35rem;
+  margin-top: 6rem;
+}
+
+/* ========================================CARRUSEL========================================*/
+.carrusel {
+  margin-bottom: rem;
+}
+.carrusel .d-item {
+  height: 60rem;
+}
+.carrusel .carousel-item img {
+  max-width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
