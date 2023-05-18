@@ -218,8 +218,8 @@ footer h4 {
 
 /* ========================================BANNER======================================== */
 .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.jpg);
-  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -288,7 +288,7 @@ footer h4 {
 
 /* ========================================CARRUSEL========================================*/
 .carrusel {
-  margin-bottom: rem;
+  margin-bottom: 3rem;
 }
 .carrusel .d-item {
   height: 60rem;
@@ -298,4 +298,167 @@ footer h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/*  ========================================PROYECTOS======================================== */
+.proyecto__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 3rem;
+  display: block;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.4rem 0;
+          box-shadow: 0 0.2rem 0.4rem 0;
+  margin: auto;
+}
+.card img {
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.card .card__pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card .card__pie .card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  text-align: center;
+}
+.card .card__pie p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.proyectos {
+  background-color: #fff;
+  padding-bottom: 5rem;
+  height: 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* ANIMACIONES: */
+}
+.proyectos .card_proyectos {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* ANIMACIONES: */
+}
+.proyectos .card_proyectos h3 {
+  display: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.proyectos .card_proyectos h3 br {
+  display: none;
+}
+.proyectos .card_proyectos img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.proyectos .card_proyectos .card__pie {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.proyectos .card_proyectos:hover img {
+  display: none;
+}
+.proyectos .card_proyectos:hover .card__pie {
+  display: none;
+}
+.proyectos .card_proyectos:hover h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.proyectos .egresaditos:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/egresaditos.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/egresaditos.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .yoga:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/yoga.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/yoga.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .emprendimiento:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/Emprendimientos.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Emprendimientos.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .personal_trainer:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/Entrenamiento.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Entrenamiento.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
