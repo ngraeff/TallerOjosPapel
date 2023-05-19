@@ -64,7 +64,7 @@
 
 /*  ========================================PROYECTOS======================================== */
 .proyecto__title {
-    @include text-estilo(text-align, center, font-size, 3rem);
+    @include text-estilo(text-align, center, font-size, $tamanio-titulos);
     display: block;
 }
 

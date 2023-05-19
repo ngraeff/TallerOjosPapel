@@ -10,7 +10,7 @@ header{
         width: 6rem;
     }
 
-    .item__estilo--propio{
+    .item__estilo--propio,.sub-item__estilo--propio{
         
         padding: 1rem;
         @include text-estilo(text-decoration,none,color,$color_text_nav,font-size,1.4rem,font-weight,500);
@@ -21,14 +21,10 @@ header{
         }
     }
     .sub-item__estilo--propio{
-        padding: 1rem;
-        @include text-estilo(text-decoration,none,color,#000,font-size,1rem,font-weight,500);
-        transition: all $velocidad_cambio_color ease-in-out;
-        &:hover{
-            @include text-estilo(color,$color_contraste);
+        
+        @include text-estilo(color, #000,font-size,1rem);
+        .mar-der{
+            margin-right: 2rem;
         }
-    }
-    .mar-der{
-        margin-right: 2rem;
-    }
+}
 }
