@@ -23,7 +23,6 @@
 }
 
 @mixin text-estilo($propiedades...){
-    display: flex;
     @each $propiedad in $propiedades{
         @if $propiedad == color{
             color: nth($propiedades, index($propiedades, $propiedad) + 1);

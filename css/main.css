@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +21,6 @@ header .logo-navbar {
 }
 header .item__estilo--propio, header .sub-item__estilo--propio {
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-decoration: none;
   color: #fff;
   font-size: 1.4rem;
@@ -34,19 +32,16 @@ header .item__estilo--propio, header .sub-item__estilo--propio {
           align-items: center;
 }
 header .item__estilo--propio:hover, header .sub-item__estilo--propio:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #e637bf;
 }
 header .sub-item__estilo--propio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #000;
   font-size: 1rem;
 }
 header .sub-item__estilo--propio .mar-der {
+  margin-right: 2rem;
+}
+header .mar-der {
   margin-right: 2rem;
 }
 
@@ -119,16 +114,10 @@ footer .footer__contenedor .footer__map .footer__map--ul {
   list-style-type: none;
 }
 footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   margin: 0.2rem 0;
 }
 footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #000;
   text-decoration: none;
   font-size: 1.5rem;
@@ -136,9 +125,6 @@ footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
   transition: 0.3s;
 }
 footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #e637bf;
 }
 footer .footer__contenedor .footer__redes {
@@ -159,9 +145,6 @@ footer .footer__contenedor .footer__redes {
   padding-right: 0;
 }
 footer .footer__contenedor .footer__redes h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1.8rem;
   font-weight: 600;
   color: #000;
@@ -196,9 +179,6 @@ footer .footer__contenedor .footer__redes .footer__redes--ul img:hover {
   cursor: pointer;
 }
 footer h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   font-size: 1.3rem;
   font-weight: 100;
@@ -253,18 +233,12 @@ footer h4 {
   padding-right: 6rem;
 }
 .personaliza .contenedor__derecho h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #fff;
   font-size: 5.5rem;
   font-weight: 100;
   text-align: end;
 }
 .personaliza .contenedor__derecho a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-decoration: none;
   color: #e637bf;
   font-size: 1.2rem;
@@ -307,26 +281,17 @@ footer h4 {
   margin: auto;
 }
 .banner .banner__text .banner__text--title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #fff;
   font-size: 8rem;
   margin-top: 5rem;
   padding-bottom: 1rem;
 }
 .banner .banner__text .banner__text--eslogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #fff;
   font-size: 2rem;
   margin-top: 3rem;
 }
 .banner .banner__text .banner__text--eslogan span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #e637bf;
   font-style: italic;
   font-weight: 600;
@@ -369,9 +334,6 @@ footer h4 {
 
 /*  ========================================PROYECTOS======================================== */
 .proyecto__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   font-size: 3rem;
   display: block;
@@ -423,9 +385,6 @@ footer h4 {
   text-align: center;
 }
 .card .card__pie p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   font-size: 1rem;
   padding: 0 1rem;
@@ -546,17 +505,11 @@ footer h4 {
           align-items: center;
 }
 .ventas .ventas__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 .ventas .ventas__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
@@ -587,9 +540,6 @@ footer h4 {
   border: 0.8rem solid #020381;
   border-radius: 2rem;
   background-color: #020381;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
@@ -607,4 +557,89 @@ footer h4 {
   margin-bottom: 2rem;
   background-color: #cfcccc;
   border-radius: 1rem;
+}
+
+.ventas__buzos {
+  padding-top: 6rem;
+}
+
+.not_scroll {
+  overflow-x: hidden;
+}
+
+.clientes_felices {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(99, 49, 104, 0.438)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+  /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
+  background-size: cover;
+  background-position: center;
+  padding-top: 2rem;
+}
+.clientes_felices .clientes_felices__title {
+  font-size: 9rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  padding: 0rem 6rem;
+}
+.clientes_felices .clientes_felices__text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 100;
+  padding: 0rem 6rem;
+  margin-bottom: 3rem;
+}
+.clientes_felices .clientes_felices__text span {
+  font-style: italic;
+  color: #e637bf;
+  font-weight: 600;
+}
+
+.comentarios_clientes {
+  height: auto;
+  width: 100%;
+}
+.comentarios_clientes .comentario {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+.comentarios_clientes .comentario p {
+  width: 55%;
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+  font-weight: 100;
+  padding: 0 5rem;
+}
+.comentarios_clientes .comentario p span {
+  font-weight: 0;
+}
+.comentarios_clientes .comentario img {
+  width: 26rem;
+  border-radius: 2rem;
+  margin: 3rem;
+}
+.comentarios_clientes .comentario .yoga {
+  margin-left: 7rem;
 }
