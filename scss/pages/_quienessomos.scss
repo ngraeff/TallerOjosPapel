@@ -1,0 +1,218 @@
+/*======================================== EQUIPO ========================================*/
+
+.equipo__title{
+    @include text-estilo(font-size, $tamanio-titulos,font-weight, 600,text-align,center);
+    margin-top: $separacion_text-navbar;
+    margin-bottom: 3rem;
+}
+
+.equipo{
+    margin-bottom: 1rem;
+    @include tamaños($ancho_maximo,40rem);
+    @include flex-dis(flex-wrap,wrap,justify-content,center,align-items,center);
+    margin-bottom: 5rem;
+    .card_equipo{
+        .card__pie{
+            height: 100%;
+            .card__puesto{
+                @include text-estilo(font-size, 1rem,font-weight, 600,color,#706f6f,text-align,center);
+                margin: 0;
+            }
+        }
+        
+    }
+}
+/*======================================== NUESTRO TALLER ========================================*/
+
+.nuestro_taller{
+    @include tamaños($ancho_maximo,auto);
+    @include flex-dis(flex-direction,column,align-items,center);
+    background-color: $gris_contraste;
+
+    .nuestro_taller__title{
+        @include text-estilo(font-size, $tamanio-titulos,font-weight, 600,color,#fff,text-align,center);
+        margin-top: 8rem;;
+        margin-bottom: 3rem;
+    }
+    .nuestro_taller__text{
+        @include text-estilo(font-size, 1.5rem,font-weight, 300,color,#fff,text-align,justify);
+        margin: 3rem;
+        padding: 0 20rem;
+    }
+
+    .nuestro_taller__cierre{
+        @include text-estilo(font-size, 1.5rem,font-weight, 600,color,$color_contraste,text-align,center);
+        margin: 3rem;
+        padding: 0 20rem;
+    }
+
+    .nuestro_taller__boton {
+        @include text-estilo(text-decoration,none,color,$color_contraste,font-size,1.2rem,font-weight,600);
+        border: 0.2rem solid #e637bf;
+        border-radius: 1.2rem;
+        padding: .8rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: #e637bf;
+            color: #fff;
+        }
+    }
+
+}
+
+/*======================================== HORARIOS ========================================*/
+
+
+.horarios{
+    @include flex-dis(flex-direction,column,align-items,center);
+    @include tamaños($ancho_maximo,auto);
+    padding:8rem 0;
+    h2{
+        @include text-estilo(font-size, $tamanio-titulos,font-weight, 600,text-align,center);
+        margin-bottom: 3rem;
+    }
+    section{
+        @include flex-dis(justify-content,space-between,align-items,center);
+        margin: 0 3rem 3rem 3rem 3rem;
+    }
+
+    h3{
+        @include text-estilo(font-size, 2rem,font-weight, 600,text-align,center);
+        margin: 4rem;
+
+    }
+    .calendario{
+        width: 15rem;
+    }
+    .reloj{
+        width: 15rem;
+        margin: 1rem;
+        padding-left: 5rem;
+    }
+}
+
+/*======================================== MAPA ========================================*/
+
+.mapa{
+    @include tamaños($ancho_maximo,60rem);
+    @include flex-dis(flex-direction,column,align-items,center);
+    background-color: $gris_contraste;
+
+    h2{
+        margin: 3rem;
+        @include text-estilo(color,#fff,font-size,$tamanio-titulos);
+    }
+    iframe{
+        @include tamaños(50%,40rem);
+        margin: 2rem;
+    }
+}
+
+
+/*======================================== FORMULARIO ========================================*/
+.formulario{
+    @include tamaños($ancho_maximo,55rem);
+    @include flex-dis(flex-direction,column,align-items,center);
+
+    h2{
+        margin: 3rem;
+        @include text-estilo(text-align,center,font-weight,600,font-size,$tamanio-titulos);
+    }
+    form{
+        @include tamaños(45%,72%);
+        background-color: $gris_contraste;
+        border-radius: 2rem;
+        @include flex-dis(flex-direction,column,align-items,center,justify-content,center);
+        padding: 3rem 4rem;
+
+        .form__conjunto{
+            @include tamaños($ancho_maximo,$altura_maxima);
+            @include flex-dis(justify-content,space-between,align-items,center);
+
+            .conjunto{
+                width: 80%;
+                @include text-estilo(color,#fff,font-size,$tamanio_form_text);
+                @include flex-dis(flex-direction,column,justify-content,center,align-items,left);
+                label{
+                    margin: 0 .5rem;
+                }
+                input{
+                    @include tamaños(75%,2rem);
+                    @include text-estilo(text-align,center,font-size,1rem);
+                    text-align: center;
+                    border-radius: 1rem;
+                    border: none;
+                }
+            }
+            .conjunto_der{
+                align-items: end;
+            }
+        }
+        .form__conjunto--triple{
+            @include tamaños($ancho_maximo,$altura_maxima);
+            @include flex-dis(justify-content,space-between,align-items,center);
+
+            .conjunto__triple{
+                
+                @include flex-dis(flex-direction,column,justify-content,center,align-items,center);
+                @include text-estilo(text-align,center,font-size,$tamanio_form_text,color,#fff);
+
+                select{
+                    @include tamaños(12rem,2rem);
+                    @include text-estilo(text-align,center,font-size,1rem);
+                    border-radius: 1rem;
+                    border: none;
+                    margin-top: .7rem;
+                }
+                input{
+                    @include tamaños(12rem,2rem);
+                    @include text-estilo(text-align,center,font-size,1rem);
+                    text-align: center;
+                    border-radius: 1rem;
+                    border: none;
+                    margin-top: .7rem;
+                }
+            }
+            .talle select{
+                width:5rem ;
+            }
+        }
+        .form__conjunto--comentario {
+            @include tamaños($ancho_maximo,$altura_maxima);
+            @include flex-dis(justify-content,space-between,align-items,center,flex-direction,column);
+            @include text-estilo(color,#fff,font-size,$tamanio_form_text);
+            margin-top: 1rem;
+
+            label {
+                margin-bottom: 1rem;
+            }   
+
+            textarea {
+                @include tamaños(96%,10rem);
+                border-radius: 1rem;
+                border: none;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                resize: none;
+            }
+    }
+    .boton2 {
+        width: 100%;
+        @include flex-dis(align-items,center,justify-content,end);
+        padding-top: 1rem;
+
+        input{
+            @include text-estilo(font-size,$tamanio_form_text,color,#000);
+            cursor: pointer;
+            padding: .8rem;
+            border: solid .12rem #000;
+            background-color: #bebebe;
+            border-radius: 1rem;
+        }
+    }
+}
+}

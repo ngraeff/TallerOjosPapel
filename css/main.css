@@ -643,3 +643,372 @@ footer h4 {
 .comentarios_clientes .comentario .yoga {
   margin-left: 7rem;
 }
+
+/*======================================== EQUIPO ========================================*/
+.equipo__title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.equipo {
+  margin-bottom: 1rem;
+  height: 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+.equipo .card_equipo .card__pie {
+  height: 100%;
+}
+.equipo .card_equipo .card__pie .card__puesto {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #706f6f;
+  text-align: center;
+  margin: 0;
+}
+
+/*======================================== NUESTRO TALLER ========================================*/
+.nuestro_taller {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #666869;
+}
+.nuestro_taller .nuestro_taller__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.nuestro_taller .nuestro_taller__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: justify;
+  margin: 3rem;
+  padding: 0 20rem;
+}
+.nuestro_taller .nuestro_taller__cierre {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e637bf;
+  text-align: center;
+  margin: 3rem;
+  padding: 0 20rem;
+}
+.nuestro_taller .nuestro_taller__boton {
+  text-decoration: none;
+  color: #e637bf;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0.2rem solid #e637bf;
+  border-radius: 1.2rem;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nuestro_taller .nuestro_taller__boton:hover {
+  background-color: #e637bf;
+  color: #fff;
+}
+
+/*======================================== HORARIOS ========================================*/
+.horarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 8rem 0;
+}
+.horarios h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.horarios section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3rem 3rem 3rem 3rem;
+}
+.horarios h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 4rem;
+}
+.horarios .calendario {
+  width: 15rem;
+}
+.horarios .reloj {
+  width: 15rem;
+  margin: 1rem;
+  padding-left: 5rem;
+}
+
+/*======================================== MAPA ========================================*/
+.mapa {
+  height: 60rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #666869;
+}
+.mapa h2 {
+  margin: 3rem;
+  color: #fff;
+  font-size: 3rem;
+}
+.mapa iframe {
+  height: 40rem;
+  width: 50%;
+  margin: 2rem;
+}
+
+/*======================================== FORMULARIO ========================================*/
+.formulario {
+  height: 55rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario h2 {
+  margin: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.formulario form {
+  height: 72%;
+  width: 45%;
+  background-color: #666869;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 4rem;
+}
+.formulario form .form__conjunto {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario form .form__conjunto .conjunto {
+  width: 80%;
+  color: #fff;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.formulario form .form__conjunto .conjunto label {
+  margin: 0 0.5rem;
+}
+.formulario form .form__conjunto .conjunto input {
+  height: 2rem;
+  width: 75%;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+}
+.formulario form .form__conjunto .conjunto_der {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.formulario form .form__conjunto--triple {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario form .form__conjunto--triple .conjunto__triple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.formulario form .form__conjunto--triple .conjunto__triple select {
+  height: 2rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 0.7rem;
+}
+.formulario form .form__conjunto--triple .conjunto__triple input {
+  height: 2rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 0.7rem;
+}
+.formulario form .form__conjunto--triple .talle select {
+  width: 5rem;
+}
+.formulario form .form__conjunto--comentario {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.formulario form .form__conjunto--comentario label {
+  margin-bottom: 1rem;
+}
+.formulario form .form__conjunto--comentario textarea {
+  height: 10rem;
+  width: 96%;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.formulario form .boton2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 1rem;
+}
+.formulario form .boton2 input {
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: solid 0.12rem #000;
+  background-color: #bebebe;
+  border-radius: 1rem;
+}

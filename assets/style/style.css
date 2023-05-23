@@ -576,7 +576,7 @@ footer {
 }
 
 .card__puesto {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
     text-align: center;
@@ -854,7 +854,65 @@ footer {
     font-size: 1.2rem;
     cursor: pointer;
 }
+/*======================================== 404 ========================================*/
 
+.page__404{
+    background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../img/background.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__404 img{
+    height: 45%;
+}
+.page__404 .texto__404{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.page__404 h1{
+    font-size: 12rem;
+    color: #e637bf;
+    font-weight:bold;
+}
+
+.page__404 h2{
+    
+    font-size: 3rem;
+    color: #fff;
+    font-weight:bold;
+}
+.page__404 p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight:300;
+}
+
+.page__404 a{
+    border: solid .2rem #e637bf ;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #e637bf;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all .3s ease;
+    margin-bottom: 2rem;
+}
+
+.page__404 a:hover{
+    background-color: #e637bf;
+    color: #fff;
+}
 /* =============================================================================== 
 ====================================QUERY=========================================
 ==================================================================================
@@ -1601,8 +1659,6 @@ footer {
         padding: .3rem .6rem;
     }
 }
-
-
 
 
 
