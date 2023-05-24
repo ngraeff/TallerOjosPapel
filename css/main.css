@@ -257,6 +257,80 @@ footer h4 {
   cursor: pointer;
 }
 
+/* pagina de error 404 */
+.page__404 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page__404 img {
+  height: 45%;
+}
+.page__404 .texto__404 {
+  height: 55%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__404 .texto__404 h1 {
+  color: #e637bf;
+  font-size: 12rem;
+  font-weight: bold;
+}
+.page__404 .texto__404 h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.page__404 .texto__404 p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.page__404 .texto__404 a {
+  border: solid 0.2rem #e637bf;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #e637bf;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.page__404 .texto__404 a:hover {
+  background-color: #e637bf;
+  color: #fff;
+}
+
 /* ========================================BANNER======================================== */
 .banner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
@@ -295,7 +369,6 @@ footer h4 {
   color: #e637bf;
   font-style: italic;
   font-weight: 600;
-  padding-left: 1rem;
 }
 .banner .banner__text .banner__text--eslogan br {
   display: none;
@@ -531,7 +604,7 @@ footer h4 {
   width: 100%;
 }
 .ventas .contenedor__card__ventas .carta__producto {
-  margin: 2rem 4.2%;
+  margin: 2rem 5.1%;
 }
 .ventas .contenedor__card__ventas .carta__producto .card__pie {
   height: 100%;
@@ -633,7 +706,7 @@ footer h4 {
   padding: 0 5rem;
 }
 .comentarios_clientes .comentario p span {
-  font-weight: 0;
+  font-weight: 600;
 }
 .comentarios_clientes .comentario img {
   width: 26rem;
@@ -811,7 +884,7 @@ footer h4 {
 }
 .mapa iframe {
   height: 40rem;
-  width: 50%;
+  width: 60%;
   margin: 2rem;
 }
 
@@ -1011,4 +1084,187 @@ footer h4 {
   border: solid 0.12rem #000;
   background-color: #bebebe;
   border-radius: 1rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1320px) {
+  /* ===================BANNER=============== */
+  .banner .banner__text {
+    padding-left: 6rem;
+    margin: auto;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 6rem;
+    padding-bottom: 1rem;
+    margin-top: 8rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .banner .banner__contenedor .banner__img {
+    width: 20rem;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 35rem;
+  }
+  /*  ========================================PROYECTOS======================================== */
+  .card {
+    height: 28rem;
+    width: 18rem;
+    margin: 3rem;
+  }
+  .proyecto__title {
+    margin-bottom: 1.5rem;
+  }
+  .proyectos {
+    height: auto;
+    width: 100%;
+    padding: 0 5rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .proyectos .egresaditos {
+    grid-area: proyecto1;
+  }
+  .proyectos .personal_trainer {
+    grid-area: proyecto2;
+  }
+  .proyectos .emprendimiento {
+    grid-area: proyecto4;
+  }
+  .proyectos .yoga {
+    grid-area: proyecto3;
+  }
+  /* ========================Ventas======================== */
+  .ventas .contenedor__card__ventas .carta__producto {
+    margin: 3rem;
+  }
+  /* ========================Personaliza======================== */
+  .personaliza {
+    height: auto;
+    width: 100%;
+    padding: 7rem 2rem;
+  }
+  .personaliza img {
+    width: 20rem;
+    padding-left: 1rem;
+  }
+  .personaliza .contenedor__derecho {
+    width: 60%;
+    padding-right: 1rem;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 4rem;
+    text-align: end;
+    margin-bottom: 3rem;
+  }
+  /*======================================== CLIENTES FELICES ========================================*/
+  .clientes_felices .clientes_felices__title {
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+    padding: 0rem 2rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+  }
+  .comentarios_clientes {
+    padding: 2rem;
+  }
+  .comentarios_clientes .comentario {
+    width: 100%;
+  }
+  .comentarios_clientes .comentario p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .comentarios_clientes .comentario img {
+    width: 15rem;
+    margin: 0;
+  }
+  .comentarios_clientes .comentario .yoga {
+    margin-left: 0;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+  }
+  .equipo .card_equipo {
+    margin: 2rem;
+  }
+  /* ==== NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__title {
+    margin-top: 5rem;
+  }
+  .nuestro_taller .nuestro_taller__text {
+    padding: 0 8rem;
+  }
+  .nuestro_taller .nuestro_taller__cierre {
+    padding: 0 8rem;
+  }
+  .nuestro_taller .nuestro_taller__boton {
+    margin-bottom: 5rem;
+  }
+  /* ====MAPA==== */
+  .mapa iframe {
+    height: 40rem;
+    width: 80%;
+    margin: 2rem;
+  }
+  /* ====FORMULARIO==== */
+  .formulario {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .formulario form {
+    width: 80%;
+    padding: 2.5rem;
+  }
+  .formulario form .form__conjunto .conjunto {
+    width: 40%;
+    font-size: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formulario form .form__conjunto .conjunto input {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .formulario form .form__conjunto--triple {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple select {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple input {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .talle select {
+    width: 40%;
+  }
+  .formulario form .boton2 {
+    padding-top: 1rem;
+  }
+  .formulario form .boton2 input {
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
 }

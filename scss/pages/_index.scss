@@ -24,7 +24,7 @@
 
             span {
                 @include text-estilo(color, $color_contraste, font-style, italic, font-weight, 600);
-                padding-left: 1rem;
+                
             }
 
             br {
