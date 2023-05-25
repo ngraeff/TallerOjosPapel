@@ -452,10 +452,10 @@ footer h4 {
           justify-content: center;
 }
 .card .card__pie .card__title {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0;
-  text-align: center;
 }
 .card .card__pie p {
   text-align: center;
@@ -1266,5 +1266,409 @@ footer h4 {
   .formulario form .boton2 input {
     font-size: 1rem;
     padding: 0.4rem 0.6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner .banner__text {
+    padding-left: 0;
+    text-align: center;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 6.5rem;
+    margin-top: 7rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    font-size: 1.8rem;
+  }
+  .banner .banner__contenedor {
+    width: 0;
+  }
+  .banner .banner__contenedor .banner__img {
+    display: none;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 45rem;
+  }
+  .proyecto__title {
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+  }
+  /* ==== CARD==== */
+  .card {
+    height: 22rem;
+    width: 13rem;
+    margin: 2rem;
+  }
+  .card img {
+    height: 70%;
+  }
+  .card .card__pie {
+    padding-bottom: 0.5rem;
+  }
+  .card .card__pie .card__title {
+    font-size: 1rem;
+    margin: 0;
+    height: 30%;
+    padding-top: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .card__pie p {
+    text-align: center;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0rem;
+    padding: 0 0.5rem;
+    height: 70%;
+  }
+  /* ==== PROYECTOS==== */
+  .proyecto__title {
+    font-size: 2.4rem;
+  }
+  .proyectos {
+    height: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .proyectos .card_proyectos img {
+    height: 65%;
+  }
+  .proyectos .card_proyectos .card__pie {
+    height: 35%;
+    padding: 0;
+  }
+  /* =============================FOOTER================= */
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  footer .footer__contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    padding: 1.8rem 0;
+  }
+  footer .footer__contenedor .footer__logo img {
+    width: 7rem;
+    padding: 0;
+  }
+  footer .footer__contenedor .footer__map {
+    margin-top: 1rem;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li {
+    margin: 0.5rem 0;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
+    font-size: 1.6rem;
+  }
+  footer .footer__contenedor .footer__redes h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer__contenedor .footer__redes .footer__redes--ul img {
+    width: 2.7rem;
+    margin: 0 0.6rem;
+  }
+  footer h4 {
+    font-size: 1rem;
+  }
+  /*  VENTAS ====*/
+  .ventas {
+    /* ====PERSONALIZA==== */
+  }
+  .ventas .ventas__text {
+    font-size: 1.3rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto {
+    width: 13rem;
+    margin: 1.5rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
+    font-size: 1.2rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .boton {
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .ventas .boton__ventas {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .personaliza {
+    height: auto;
+  }
+  .personaliza img {
+    display: none;
+  }
+  .personaliza .contenedor__derecho {
+    width: 100%;
+    margin: auto;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 4rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1rem;
+  }
+  .clientes_felices {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+  }
+  .clientes_felices .clientes_felices__title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 0rem 2rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0rem 2rem;
+  }
+  .comentarios_clientes {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  .comentarios_clientes .comentario {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0;
+  }
+  .comentarios_clientes .comentario p {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    padding: 0 5rem;
+  }
+  .comentarios_clientes .comentario img {
+    width: 13rem;
+    border-radius: 2rem;
+  }
+  .comentarios_clientes .comentario .yoga {
+    margin-left: 7rem;
+  }
+  .comentarios_clientes .comantario__yoga {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .comentarios_clientes .comantario__yoga .yoga {
+    margin: 0;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+  }
+  .equipo .card_equipo {
+    margin: 1.5rem;
+  }
+  .equipo .card_equipo img {
+    height: 66%;
+  }
+  .equipo .card_equipo .card__pie .card__title {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .equipo .card_equipo .card__pie .card__puesto {
+    font-size: 0.9rem;
+  }
+  /* ====NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .nuestro_taller .nuestro_taller__cierre {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .nuestro_taller .nuestro_taller__boton {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+  /* ====HORARIOS==== */
+  .horarios {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "titulo" "horarios" "dias";
+  }
+  .horarios .dias--section {
+    grid-area: dias;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .horarios .horario--section {
+    grid-area: horarios;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .horarios h2 {
+    grid-area: titulo;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .horarios h3 {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  .horarios .calendario {
+    grid-area: dias_img;
+    width: 9rem;
+  }
+  .horarios .reloj {
+    grid-area: dias_img;
+    width: 6.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  /* ====MAPA==== */
+  .mapa {
+    height: 50rem;
+  }
+  .mapa h2 {
+    margin: 2rem;
+    text-align: center;
+  }
+  .mapa iframe {
+    height: 40rem;
+    width: 80%;
+    margin: 3rem;
+  }
+  /* ====CONTACTO==== */
+  .formulario {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .formulario form {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  .formulario form .form__conjunto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .formulario form .form__conjunto .conjunto {
+    width: 90%;
+  }
+  .formulario form .form__conjunto--triple {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple label {
+    margin: 0.5rem;
+  }
+  .formulario form .form__conjunto--triple .talle select {
+    width: 50%;
+  }
+  .formulario form .boton2 input {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .page__404 img {
+    height: 30%;
+  }
+  .page__404 .texto__404 {
+    height: 55%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .page__404 .texto__404 h1 {
+    font-size: 8rem;
+    text-align: center;
+  }
+  .page__404 .texto__404 h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 a {
+    font-size: 1rem;
   }
 }

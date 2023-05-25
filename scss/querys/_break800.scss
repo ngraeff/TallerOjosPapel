@@ -1,0 +1,384 @@
+@media screen and (max-width: 800px) {
+    .banner {
+        .banner__text {
+            padding-left: 0;
+            text-align: center;
+    
+            .banner__text--title {
+                font-size: 6.5rem;
+                margin-top: 7rem;
+            }
+            .banner__text--eslogan {
+                font-size: 1.8rem;
+            }
+        }
+    
+        .banner__contenedor {
+            width: 0;
+            .banner__img {
+                display: none;
+            }
+        }
+    }
+     /* ==== CARRUSEL==== */
+    .carrusel{
+        .d-item {
+            height: 45rem;
+        }
+    }
+    .proyecto__title {
+        @include text-estilo(text-align, center, font-size, $tamanio-titulos);
+        display: block;
+    }
+    /* ==== CARD==== */
+    .card {
+        @include tamaños(13rem, 22rem);
+        margin: 2rem;
+        img {
+            height: 70%;
+        }
+        .card__pie {
+            padding-bottom: .5rem;
+            .card__title {
+                font-size: 1rem;
+                margin: 0;
+                height: 30%;
+                padding-top: 0.5rem;
+                @include flex-dis(justify-content, center, align-items, center);
+            }
+    
+            p {
+                @include text-estilo(text-align, center, font-size, .8rem);
+                @include flex-dis(justify-content, center, align-items, center);
+                margin-bottom: 0rem;
+                padding: 0 .5rem;
+                height: 70%;
+
+            }
+        }
+    }
+    /* ==== PROYECTOS==== */
+    .proyecto__title{
+        font-size: 2.4rem;
+    }
+    .proyectos {
+        height: auto;
+        padding: 0;
+        @include flex-dis(flex-wrap, wrap, justify-content, center, align-items, center);
+    
+        .card_proyectos {
+            img {
+                height: 65%;
+            }
+            .card__pie{
+                height: 35%;
+                padding: 0;
+                
+            }
+        }
+    }
+    /* =============================FOOTER================= */
+    footer{
+        
+        @include tamaños($ancho_maximo,auto);
+    
+        .footer__contenedor{
+            flex-direction: column;
+            width: 50%;
+            padding: 1.8rem 0;
+            .footer__logo{                
+                img{
+                    width: 7rem;
+                    padding: 0;
+                }
+            }
+
+            .footer__map{
+                margin-top: 1rem;
+                .footer__map--ul{
+                    .footer__map--li{
+                        margin: .5rem 0;
+                        a{
+                            font-size:1.6rem;
+                        }
+                    }
+    
+                }
+            }
+            .footer__redes{
+                h3{
+                    font-size: 1.8rem;
+                    margin-bottom: 1.5rem;
+                }
+                .footer__redes--ul{
+                    img{
+                        width: 2.7rem;
+                        margin: 0 .6rem
+                    }
+                }
+            }   
+        }
+        h4{
+            font-size: 1rem;
+        }
+    }
+    
+    /*  VENTAS ====*/
+    .ventas{
+        .ventas__text{
+            font-size: 1.3rem;
+        }
+        .contenedor__card__ventas{
+            .carta__producto {
+                width: 13rem;
+                margin: 1.5rem;
+                .card__pie{
+                    .card__title{
+                        font-size: 1.2rem;
+                    }
+                    .boton{
+                        border-radius: 2rem;
+                        margin-top: 1rem;
+                        font-size: .8rem;
+    
+                    }
+                }
+            }
+        }
+        .boton__ventas {
+            padding: .5rem;
+            font-size: .8rem;
+        }
+
+         /* ====PERSONALIZA==== */
+}
+    .personaliza{
+        height: auto;
+        
+        img{
+            display: none;
+        }
+
+        .contenedor__derecho{
+            width: 100%;
+            margin: auto;
+            padding-right: 0;
+            align-items: center;
+            h2{
+                @include text-estilo(font-size,4rem,text-align,center);
+                justify-content: center;
+                padding: 0 1rem;    
+            }
+        }
+    }
+    .clientes_felices{
+        align-items: center;
+        padding-top: 2rem;
+        .clientes_felices__title {
+            @include text-estilo(font-size, 4rem,text-align,center);
+            margin: 3rem 0;
+            padding: 0rem 2rem;
+        }
+        .clientes_felices__text {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 0rem 2rem;
+        }
+    }
+    .comentarios_clientes{
+        padding: 0;    
+        margin-bottom: 4rem;
+        .comentario{
+            width: 100%;
+            flex-direction: column;
+            padding: 1rem 0;
+            p{
+                width: 100%;
+                text-align: center;
+                margin: 3rem 0;
+                font-size: 1.2rem;
+                padding: 0 5rem;
+            }
+            img{
+                width: 13rem;
+                border-radius: 2rem;   
+            }
+            .yoga{
+                margin-left: 7rem;
+            }
+        }
+        .comantario__yoga{
+            flex-direction: column-reverse;
+            .yoga{
+                margin: 0;
+            }
+        }
+    }
+    /* ==== EQUIPO==== */
+
+    .equipo {
+
+        height: auto;
+    
+        .card_equipo {
+            margin: 1.5rem;
+            img{
+                height: 66%;
+            }
+            
+            .card__pie {
+                .card__title{
+                    padding-top:2rem; 
+                    font-size: 1.2rem;
+                }
+                .card__puesto {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+    /* ====NUESTRO TALLER==== */
+    .nuestro_taller {
+        .nuestro_taller__text {
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+
+        .nuestro_taller__cierre {
+            font-size: 1.2rem;
+            padding: 0;
+        }
+
+        .nuestro_taller__boton {
+            font-size: 1rem;
+            padding: .6rem .8rem;
+        }
+    }
+    /* ====HORARIOS==== */
+    .horarios {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas:
+            "titulo"
+            "horarios"
+            "dias";
+
+        .dias--section{
+            grid-area:dias;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .horario--section{
+            grid-area: horarios;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        h2 {
+            grid-area: titulo;
+            font-size: 2rem;
+            margin: 2rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 2rem;
+        }
+        .calendario {
+            grid-area: dias_img;
+            width: 9rem;
+        }
+        .reloj {
+            grid-area: dias_img;
+            width: 6.5rem;
+            margin: 0;
+            padding: 0
+        }
+    }
+    /* ====MAPA==== */
+    .mapa {
+        height: 50rem;
+        h2 {
+            margin:2rem;
+            text-align: center
+        }
+        iframe {
+            @include tamaños(80%, 40rem);
+            margin: 3rem;
+        }
+    }
+    /* ====CONTACTO==== */
+    .formulario {
+        height: auto;
+        margin-bottom: 3rem;
+
+    
+        form {
+            width: 80%;
+            padding: 1.5rem;
+    
+            .form__conjunto {
+                flex-direction: column;
+                width: 100%;
+                .conjunto{
+                    width: 90%;
+                }
+            }
+    
+            .form__conjunto--triple {
+                width: 100%;
+                @include flex-dis(flex-direction,column,flex-wrap,wrap);
+                
+                .conjunto__triple {
+                    width: 50%;
+                    font-size: 1rem;
+
+                    label{
+                        margin: .5rem;
+                    }
+                }
+                .talle select {
+                    width: 50%;
+                }
+            }
+            .boton2 {
+                input {
+                    font-size: .6rem;
+                    padding: .3rem .6rem;
+                }
+            }
+        }
+    }
+    .page__404{
+            img{
+                height: 30%;
+            }
+            .texto__404{
+                @include tamaños($ancho_maximo,55%);
+                @include flex-dis(flex-direction,column,align-items,center,justify-content,space-between);
+    
+                h1{
+                    font-size: 8rem;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 3rem;  
+                    text-align: center;   
+                    padding: 0 1rem;          
+                }
+                p{
+                    font-size: 1.5rem;   
+                    text-align: center; 
+                    padding: 0 1rem;            
+                }
+                a{
+                    font-size: 1rem;  
+                }
+            }   
+    
+    }
+    
+
+
+}

@@ -87,10 +87,8 @@
         @include flex-dis(flex-direction, column, align-items, center, justify-content, center);
 
         .card__title {
-            font-size: 1.5rem;
-            font-weight: 600;
+            @include text-estilo(text-align, center, font-size,1.5rem, font-weight,600);
             margin: 1rem 0;
-            text-align: center;
         }
 
         p {
