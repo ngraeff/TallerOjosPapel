@@ -1,0 +1,196 @@
+@media screen and (max-width: 430px) {
+
+        .banner {
+            .banner__text {
+                width: 100%;
+                .banner__text--title {
+                    font-size: 5.5rem;
+                    padding-bottom: 1rem;
+                    margin-top: 7rem;
+                }
+                .banner__text--eslogan {
+                    margin-top: 3rem;
+                    font-size: 1.7rem;
+                    
+                    .banner_break {
+                        display: inline;
+                    }
+                }
+            }
+        }
+         /* ==== CARRUSEL==== */
+        .carrusel{
+            .d-item {
+                height: 30rem;
+            }
+        }
+        /* ==== CARD==== */
+        .card {
+            @include tamaños(11rem, 20rem);
+            margin: 2rem;
+            img {
+                height: 70%;
+            }
+            .card__pie {
+                p {
+                    font-size: .75rem;
+                }
+            }
+        }
+        /* ==== PROYECTOS==== */
+        .proyecto__title{
+            font-size: 2rem;
+        }
+        /* =============================FOOTER================= */
+        footer{
+            
+            @include tamaños($ancho_maximo,auto);
+        
+            .footer__contenedor{
+                .footer__map{
+                    .footer__map--ul{
+                        .footer__map--li{
+                            a{
+                                font-size:  1.4em;
+                            }
+                        }
+                    }
+                }
+                .footer__redes{
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                }   
+            }
+            h4{
+                font-size: .9rem;
+            }
+        }
+        
+        /*  VENTAS ====*/
+        .ventas{
+            .ventas__text{
+                font-size: 1.3rem;
+            }
+            .contenedor__card__ventas{
+                .carta__producto {
+                    img{
+                        height: 60%;
+                    }
+                    width: 10rem;
+                    margin: 1rem;
+                    .card__pie{
+                        .card__title{
+                            font-size: 1rem;
+                        } 
+                    }
+                }
+            }
+            .boton__ventas {
+                padding: .5rem;
+                font-size: .8rem;
+            }
+    
+             /* ====PERSONALIZA==== */
+    }
+        .personaliza{
+            padding: 5rem 0;
+            .contenedor__derecho{
+                h2{
+                    font-size: 2.6rem;
+                    padding: 0 1rem;    
+                }
+                a {
+                    margin-top: 2rem;
+                    font-size: .8rem;
+                    padding: .6rem 1rem;
+                    
+                }
+            }
+        }
+        /* ====CLIENTES FELICES==== */
+
+        .clientes_felices{
+            .clientes_felices__title {
+                font-size: 3rem;
+            }
+            .clientes_felices__text {
+                font-size: 1rem;
+            }
+        }
+        .comentarios_clientes{
+            .comentario{
+                p{
+                    margin: 1.5rem 0;
+                    font-size: 1rem;
+                    padding: 0 2rem;
+                }
+                img{
+                    width: 10rem;
+                }
+            }
+        }
+        /* ==== EQUIPO==== */
+    
+        .equipo {
+    
+            height: auto;
+            margin-bottom: 1.5rem;
+            .card_equipo {
+                margin: 0.7rem;
+                img{
+                    height: 60%;
+                }
+
+            }
+        }
+        /* ====NUESTRO TALLER==== */
+        .nuestro_taller {
+            .nuestro_taller__title {
+                font-size: 2.5rem;
+            }
+            .nuestro_taller__text {
+                font-size: 1rem;
+                padding: 0 2rem;
+                margin: 0;
+            }
+        }
+        /* ====CONTACTO==== */
+        .formulario {
+            form {
+                .form__conjunto {
+                    .conjunto{
+                        width: 100%;
+                    }
+                }
+        }
+        }
+
+        .page__404{
+
+                .texto__404{        
+                    h1{
+                        font-size: 6rem;
+                        text-align: center;
+                    }
+                    h2{
+                        font-size: 2rem;  
+                        text-align: center;   
+                        padding: 0 1rem;          
+                    }
+                    p{
+                        font-size: 1rem;   
+                        text-align: center; 
+                        padding: 0 1rem;            
+                    }
+                    a{
+                        font-size: 1rem;  
+                    }
+                }   
+        
+        }
+        
+    
+    
+    }
+

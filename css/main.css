@@ -1672,3 +1672,143 @@ footer h4 {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 430px) {
+  .banner .banner__text {
+    width: 100%;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 5.5rem;
+    padding-bottom: 1rem;
+    margin-top: 7rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+  }
+  .banner .banner__text .banner__text--eslogan .banner_break {
+    display: inline;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 30rem;
+  }
+  /* ==== CARD==== */
+  .card {
+    height: 20rem;
+    width: 11rem;
+    margin: 2rem;
+  }
+  .card img {
+    height: 70%;
+  }
+  .card .card__pie p {
+    font-size: 0.75rem;
+  }
+  /* ==== PROYECTOS==== */
+  .proyecto__title {
+    font-size: 2rem;
+  }
+  /* =============================FOOTER================= */
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
+    font-size: 1.4em;
+  }
+  footer .footer__contenedor .footer__redes h3 {
+    font-size: 1.6rem;
+  }
+  footer h4 {
+    font-size: 0.9rem;
+  }
+  /*  VENTAS ====*/
+  .ventas {
+    /* ====PERSONALIZA==== */
+  }
+  .ventas .ventas__text {
+    font-size: 1.3rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto {
+    width: 10rem;
+    margin: 1rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto img {
+    height: 60%;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
+    font-size: 1rem;
+  }
+  .ventas .boton__ventas {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .personaliza {
+    padding: 5rem 0;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 2.6rem;
+    padding: 0 1rem;
+  }
+  .personaliza .contenedor__derecho a {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+  /* ====CLIENTES FELICES==== */
+  .clientes_felices .clientes_felices__title {
+    font-size: 3rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    font-size: 1rem;
+  }
+  .comentarios_clientes .comentario p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  .comentarios_clientes .comentario img {
+    width: 10rem;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .equipo .card_equipo {
+    margin: 0.7rem;
+  }
+  .equipo .card_equipo img {
+    height: 60%;
+  }
+  /* ====NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__title {
+    font-size: 2.5rem;
+  }
+  .nuestro_taller .nuestro_taller__text {
+    font-size: 1rem;
+    padding: 0 2rem;
+    margin: 0;
+  }
+  /* ====CONTACTO==== */
+  .formulario form .form__conjunto .conjunto {
+    width: 100%;
+  }
+  .page__404 .texto__404 h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .page__404 .texto__404 h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 a {
+    font-size: 1rem;
+  }
+}
