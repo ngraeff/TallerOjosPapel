@@ -1,0 +1,46 @@
+.ventas{
+    @include tamaños($ancho_maximo,auto);
+    padding-top: $separacion_text-navbar;
+    @include flex-dis(flex-direction,column,align-items,center);
+
+    .ventas__title{
+        @include text-estilo(font-size,$tamanio-titulos,font-weight,600);
+        margin-bottom: 2rem;
+    }
+    .ventas__text{
+        @include text-estilo(font-size,1.5rem,font-weight,300,text-align,center);
+        margin: 3rem;
+    }
+    .contenedor__card__ventas{
+        @include flex-dis(flex-wrap,wrap,align-items,center,justify-content,center);
+        @include tamaños($ancho_maximo,$altura_maxima);
+
+        .carta__producto {
+            margin: 2rem 5.1%;
+            .card__pie{
+                height: $altura_maxima;
+                .boton{
+                    border: 0.8rem solid #020381;
+                    border-radius: 2rem;
+                    background-color: #020381;
+                    @include text-estilo(font-size,1rem,text-decoration,none,color, #fff);
+
+                }
+            }
+        }
+    }
+    .boton__ventas {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        background-color: #cfcccc;
+        border-radius: 1rem;
+    }
+}
+
+.ventas__buzos{
+    padding-top: 6rem;
+}

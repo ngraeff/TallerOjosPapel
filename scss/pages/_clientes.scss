@@ -1,0 +1,54 @@
+.not_scroll{
+    overflow-x:hidden;
+}
+
+.clientes_felices{
+    @include tamaños($ancho_maximo,100vh);
+    @include flex-dis(flex-direction,column,justify-content,center);
+    background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+    /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
+    background-size: cover;
+    background-position: center;
+    padding-top: 2rem;
+    .clientes_felices__title {
+        @include text-estilo(font-size, 9rem,color, #fff,font-weight, 600,);
+        margin-bottom: 6rem;
+        padding: 0rem 6rem;
+    }
+    .clientes_felices__text {
+        @include text-estilo(font-size, 2rem,color, #fff,font-weight, 100);
+        padding: 0rem 6rem;
+        margin-bottom: 3rem;
+        span {
+            @include text-estilo(font-style, italic,color,$color_contraste,font-weight, 600);
+        }
+    }
+    
+}
+
+.comentarios_clientes{
+    @include tamaños($ancho_maximo,auto);
+    .comentario{
+        width:100%;
+        @include flex-dis(justify-content,center,align-items,center);
+        margin: 2rem 0;
+        p{
+            width: 55%;
+            margin: 2rem;
+            @include text-estilo(font-size,2rem,text-align,justify,font-weight,100);
+            padding: 0 5rem;
+    
+            span{
+                font-weight: 600;
+            }
+        }
+        img{
+            width: 26rem;
+            border-radius: 2rem;
+            margin: 3rem;
+        }
+        .yoga{
+            margin-left: 7rem;
+        }
+    }
+}

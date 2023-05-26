@@ -1,0 +1,1814 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: rgba(102, 104, 105, 0.6862745098);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+header .logo-navbar {
+  width: 6rem;
+}
+header .item__estilo--propio, header .sub-item__estilo--propio {
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .item__estilo--propio:hover, header .sub-item__estilo--propio:hover {
+  color: #e637bf;
+}
+header .sub-item__estilo--propio {
+  color: #000;
+  font-size: 1rem;
+}
+header .sub-item__estilo--propio .mar-der {
+  margin-right: 2rem;
+}
+header .mar-der {
+  margin-right: 2rem;
+}
+
+footer {
+  background-color: rgba(102, 104, 105, 0.6862745098);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+  /* En el siguiente include se conloca: (propiedad,valor,propiedad1,valor1...) */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+footer .footer__contenedor .footer__logo {
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer__contenedor .footer__logo img {
+  width: 10rem;
+  padding: 0;
+}
+footer .footer__contenedor .footer__map .footer__map--ul {
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+}
+footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li {
+  text-align: center;
+  margin: 0.2rem 0;
+}
+footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a:hover {
+  color: #e637bf;
+}
+footer .footer__contenedor .footer__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20rem;
+  padding-right: 0;
+}
+footer .footer__contenedor .footer__redes h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 3rem;
+}
+footer .footer__contenedor .footer__redes .footer__redes--ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+}
+footer .footer__contenedor .footer__redes .footer__redes--ul img {
+  width: 3rem;
+  margin: 0 1rem;
+  padding: 0.5rem 0.5rem;
+  border: solid 0.1rem #000;
+  border-radius: 40%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer .footer__contenedor .footer__redes .footer__redes--ul img:hover {
+  background-color: #e637bf;
+  cursor: pointer;
+}
+footer h4 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #000;
+}
+
+.personaliza {
+  height: 60rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #272727;
+}
+.personaliza img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40rem;
+  margin: auto;
+  padding-left: 3rem;
+}
+.personaliza .contenedor__derecho {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  padding-right: 6rem;
+}
+.personaliza .contenedor__derecho h2 {
+  color: #fff;
+  font-size: 5.5rem;
+  font-weight: 100;
+  text-align: end;
+}
+.personaliza .contenedor__derecho a {
+  text-decoration: none;
+  color: #e637bf;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  border: 0.2rem solid #e637bf;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  margin-top: 5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.personaliza .contenedor__derecho a:hover {
+  background-color: #e637bf;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* pagina de error 404 */
+.page__404 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page__404 img {
+  height: 45%;
+}
+.page__404 .texto__404 {
+  height: 55%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page__404 .texto__404 h1 {
+  color: #e637bf;
+  font-size: 12rem;
+  font-weight: bold;
+}
+.page__404 .texto__404 h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.page__404 .texto__404 p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.page__404 .texto__404 a {
+  border: solid 0.2rem #e637bf;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #e637bf;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.page__404 .texto__404 a:hover {
+  background-color: #e637bf;
+  color: #fff;
+}
+
+/* ========================================BANNER======================================== */
+.banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+.banner .banner__text {
+  padding-left: 10rem;
+  margin: auto;
+}
+.banner .banner__text .banner__text--title {
+  color: #fff;
+  font-size: 8rem;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+.banner .banner__text .banner__text--eslogan {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.banner .banner__text .banner__text--eslogan span {
+  color: #e637bf;
+  font-style: italic;
+  font-weight: 600;
+}
+.banner .banner__text .banner__text--eslogan br {
+  display: none;
+}
+.banner .banner__contenedor {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+.banner .banner__contenedor .banner__img {
+  width: 35rem;
+  margin-top: 6rem;
+}
+
+/* ========================================CARRUSEL========================================*/
+.carrusel {
+  margin-bottom: 3rem;
+}
+.carrusel .d-item {
+  height: 60rem;
+}
+.carrusel .carousel-item img {
+  max-width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*  ========================================PROYECTOS======================================== */
+.proyecto__title {
+  text-align: center;
+  font-size: 3rem;
+  display: block;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 0 0.2rem 0.4rem 0;
+          box-shadow: 0 0.2rem 0.4rem 0;
+  margin: auto;
+}
+.card img {
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.card .card__pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card .card__pie .card__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.card .card__pie p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.proyectos {
+  background-color: #fff;
+  padding-bottom: 5rem;
+  height: 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* ANIMACIONES: */
+}
+.proyectos .card_proyectos {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* ANIMACIONES: */
+}
+.proyectos .card_proyectos h3 {
+  display: none;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  color: #fff;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.proyectos .card_proyectos h3 br {
+  display: none;
+}
+.proyectos .card_proyectos img {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.proyectos .card_proyectos .card__pie {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.proyectos .card_proyectos:hover img {
+  display: none;
+}
+.proyectos .card_proyectos:hover .card__pie {
+  display: none;
+}
+.proyectos .card_proyectos:hover h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.proyectos .egresaditos:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/egresaditos.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/egresaditos.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .yoga:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/yoga.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/yoga.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .emprendimiento:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/Emprendimientos.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Emprendimientos.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.proyectos .personal_trainer:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(66, 66, 66, 0.479)), to(rgba(37, 37, 37, 0.76))), url(../assets/img/Entrenamiento.webp);
+  background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Entrenamiento.webp);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.ventas {
+  height: auto;
+  width: 100%;
+  padding-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ventas .ventas__title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.ventas .ventas__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 3rem;
+}
+.ventas .contenedor__card__ventas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.ventas .contenedor__card__ventas .carta__producto {
+  margin: 2rem 5.1%;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie {
+  height: 100%;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .boton {
+  border: 0.8rem solid #020381;
+  border-radius: 2rem;
+  background-color: #020381;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+.ventas .boton__ventas {
+  display: inline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #cfcccc;
+  border-radius: 1rem;
+}
+
+.ventas__buzos {
+  padding-top: 6rem;
+}
+
+.not_scroll {
+  overflow-x: hidden;
+}
+
+.clientes_felices {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(99, 49, 104, 0.438)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
+  background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+  /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
+  background-size: cover;
+  background-position: center;
+  padding-top: 2rem;
+}
+.clientes_felices .clientes_felices__title {
+  font-size: 9rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  padding: 0rem 6rem;
+}
+.clientes_felices .clientes_felices__text {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 100;
+  padding: 0rem 6rem;
+  margin-bottom: 3rem;
+}
+.clientes_felices .clientes_felices__text span {
+  font-style: italic;
+  color: #e637bf;
+  font-weight: 600;
+}
+
+.comentarios_clientes {
+  height: auto;
+  width: 100%;
+}
+.comentarios_clientes .comentario {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+.comentarios_clientes .comentario p {
+  width: 55%;
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+  font-weight: 100;
+  padding: 0 5rem;
+}
+.comentarios_clientes .comentario p span {
+  font-weight: 600;
+}
+.comentarios_clientes .comentario img {
+  width: 26rem;
+  border-radius: 2rem;
+  margin: 3rem;
+}
+.comentarios_clientes .comentario .yoga {
+  margin-left: 7rem;
+}
+
+/*======================================== EQUIPO ========================================*/
+.equipo__title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.equipo {
+  margin-bottom: 1rem;
+  height: 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+.equipo .card_equipo .card__pie {
+  height: 100%;
+}
+.equipo .card_equipo .card__pie .card__puesto {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #706f6f;
+  text-align: center;
+  margin: 0;
+}
+
+/*======================================== NUESTRO TALLER ========================================*/
+.nuestro_taller {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #666869;
+}
+.nuestro_taller .nuestro_taller__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+.nuestro_taller .nuestro_taller__text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: justify;
+  margin: 3rem;
+  padding: 0 20rem;
+}
+.nuestro_taller .nuestro_taller__cierre {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e637bf;
+  text-align: center;
+  margin: 3rem;
+  padding: 0 20rem;
+}
+.nuestro_taller .nuestro_taller__boton {
+  text-decoration: none;
+  color: #e637bf;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0.2rem solid #e637bf;
+  border-radius: 1.2rem;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.nuestro_taller .nuestro_taller__boton:hover {
+  background-color: #e637bf;
+  color: #fff;
+}
+
+/*======================================== HORARIOS ========================================*/
+.horarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 8rem 0;
+}
+.horarios h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.horarios section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3rem 3rem 3rem 3rem;
+}
+.horarios h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 4rem;
+}
+.horarios .calendario {
+  width: 15rem;
+}
+.horarios .reloj {
+  width: 15rem;
+  margin: 1rem;
+  padding-left: 5rem;
+}
+
+/*======================================== MAPA ========================================*/
+.mapa {
+  height: 60rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #666869;
+}
+.mapa h2 {
+  margin: 3rem;
+  color: #fff;
+  font-size: 3rem;
+}
+.mapa iframe {
+  height: 40rem;
+  width: 60%;
+  margin: 2rem;
+}
+
+/*======================================== FORMULARIO ========================================*/
+.formulario {
+  height: 55rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario h2 {
+  margin: 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.formulario form {
+  height: 72%;
+  width: 45%;
+  background-color: #666869;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 4rem;
+}
+.formulario form .form__conjunto {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario form .form__conjunto .conjunto {
+  width: 80%;
+  color: #fff;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+.formulario form .form__conjunto .conjunto label {
+  margin: 0 0.5rem;
+}
+.formulario form .form__conjunto .conjunto input {
+  height: 2rem;
+  width: 75%;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+}
+.formulario form .form__conjunto .conjunto_der {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.formulario form .form__conjunto--triple {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formulario form .form__conjunto--triple .conjunto__triple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.formulario form .form__conjunto--triple .conjunto__triple select {
+  height: 2rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 0.7rem;
+}
+.formulario form .form__conjunto--triple .conjunto__triple input {
+  height: 2rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+  margin-top: 0.7rem;
+}
+.formulario form .form__conjunto--triple .talle select {
+  width: 5rem;
+}
+.formulario form .form__conjunto--comentario {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.formulario form .form__conjunto--comentario label {
+  margin-bottom: 1rem;
+}
+.formulario form .form__conjunto--comentario textarea {
+  height: 10rem;
+  width: 96%;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+.formulario form .boton2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 1rem;
+}
+.formulario form .boton2 input {
+  font-size: 1.2rem;
+  color: #000;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: solid 0.12rem #000;
+  background-color: #bebebe;
+  border-radius: 1rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1320px) {
+  /* ===================BANNER=============== */
+  .banner .banner__text {
+    padding-left: 6rem;
+    margin: auto;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 6rem;
+    padding-bottom: 1rem;
+    margin-top: 8rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .banner .banner__contenedor .banner__img {
+    width: 20rem;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 35rem;
+  }
+  /*  ========================================PROYECTOS======================================== */
+  .card {
+    height: 28rem;
+    width: 18rem;
+    margin: 3rem;
+  }
+  .proyecto__title {
+    margin-bottom: 1.5rem;
+  }
+  .proyectos {
+    height: auto;
+    width: 100%;
+    padding: 0 5rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .proyectos .egresaditos {
+    grid-area: proyecto1;
+  }
+  .proyectos .personal_trainer {
+    grid-area: proyecto2;
+  }
+  .proyectos .emprendimiento {
+    grid-area: proyecto4;
+  }
+  .proyectos .yoga {
+    grid-area: proyecto3;
+  }
+  /* ========================Ventas======================== */
+  .ventas .contenedor__card__ventas .carta__producto {
+    margin: 3rem;
+  }
+  /* ========================Personaliza======================== */
+  .personaliza {
+    height: auto;
+    width: 100%;
+    padding: 7rem 2rem;
+  }
+  .personaliza img {
+    width: 20rem;
+    padding-left: 1rem;
+  }
+  .personaliza .contenedor__derecho {
+    width: 60%;
+    padding-right: 1rem;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 4rem;
+    text-align: end;
+    margin-bottom: 3rem;
+  }
+  /*======================================== CLIENTES FELICES ========================================*/
+  .clientes_felices .clientes_felices__title {
+    font-size: 5.5rem;
+    margin-bottom: 4rem;
+    padding: 0rem 2rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+  }
+  .comentarios_clientes {
+    padding: 2rem;
+  }
+  .comentarios_clientes .comentario {
+    width: 100%;
+  }
+  .comentarios_clientes .comentario p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .comentarios_clientes .comentario img {
+    width: 15rem;
+    margin: 0;
+  }
+  .comentarios_clientes .comentario .yoga {
+    margin-left: 0;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+  }
+  .equipo .card_equipo {
+    margin: 2rem;
+  }
+  /* ==== NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__title {
+    margin-top: 5rem;
+  }
+  .nuestro_taller .nuestro_taller__text {
+    padding: 0 8rem;
+  }
+  .nuestro_taller .nuestro_taller__cierre {
+    padding: 0 8rem;
+  }
+  .nuestro_taller .nuestro_taller__boton {
+    margin-bottom: 5rem;
+  }
+  /* ====MAPA==== */
+  .mapa iframe {
+    height: 40rem;
+    width: 80%;
+    margin: 2rem;
+  }
+  /* ====FORMULARIO==== */
+  .formulario {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .formulario form {
+    width: 80%;
+    padding: 2.5rem;
+  }
+  .formulario form .form__conjunto .conjunto {
+    width: 40%;
+    font-size: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formulario form .form__conjunto .conjunto input {
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .formulario form .form__conjunto--triple {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple select {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple input {
+    width: 100%;
+  }
+  .formulario form .form__conjunto--triple .talle select {
+    width: 40%;
+  }
+  .formulario form .boton2 {
+    padding-top: 1rem;
+  }
+  .formulario form .boton2 input {
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner .banner__text {
+    padding-left: 0;
+    text-align: center;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 6.5rem;
+    margin-top: 7rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    font-size: 1.8rem;
+  }
+  .banner .banner__contenedor {
+    width: 0;
+  }
+  .banner .banner__contenedor .banner__img {
+    display: none;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 45rem;
+  }
+  .proyecto__title {
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+  }
+  /* ==== CARD==== */
+  .card {
+    height: 22rem;
+    width: 13rem;
+    margin: 2rem;
+  }
+  .card img {
+    height: 70%;
+  }
+  .card .card__pie {
+    padding-bottom: 0.5rem;
+  }
+  .card .card__pie .card__title {
+    font-size: 1rem;
+    margin: 0;
+    height: 30%;
+    padding-top: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card .card__pie p {
+    text-align: center;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0rem;
+    padding: 0 0.5rem;
+    height: 70%;
+  }
+  /* ==== PROYECTOS==== */
+  .proyecto__title {
+    font-size: 2.4rem;
+  }
+  .proyectos {
+    height: auto;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .proyectos .card_proyectos img {
+    height: 65%;
+  }
+  .proyectos .card_proyectos .card__pie {
+    height: 35%;
+    padding: 0;
+  }
+  /* =============================FOOTER================= */
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  footer .footer__contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    padding: 1.8rem 0;
+  }
+  footer .footer__contenedor .footer__logo img {
+    width: 7rem;
+    padding: 0;
+  }
+  footer .footer__contenedor .footer__map {
+    margin-top: 1rem;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li {
+    margin: 0.5rem 0;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
+    font-size: 1.6rem;
+  }
+  footer .footer__contenedor .footer__redes h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer__contenedor .footer__redes .footer__redes--ul img {
+    width: 2.7rem;
+    margin: 0 0.6rem;
+  }
+  footer h4 {
+    font-size: 1rem;
+  }
+  /*  VENTAS ====*/
+  .ventas {
+    /* ====PERSONALIZA==== */
+  }
+  .ventas .ventas__text {
+    font-size: 1.3rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto {
+    width: 13rem;
+    margin: 1.5rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
+    font-size: 1.2rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .boton {
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .ventas .boton__ventas {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .personaliza {
+    height: auto;
+  }
+  .personaliza img {
+    display: none;
+  }
+  .personaliza .contenedor__derecho {
+    width: 100%;
+    margin: auto;
+    padding-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 4rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1rem;
+  }
+  .clientes_felices {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+  }
+  .clientes_felices .clientes_felices__title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 0rem 2rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0rem 2rem;
+  }
+  .comentarios_clientes {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  .comentarios_clientes .comentario {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0;
+  }
+  .comentarios_clientes .comentario p {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    padding: 0 5rem;
+  }
+  .comentarios_clientes .comentario img {
+    width: 13rem;
+    border-radius: 2rem;
+  }
+  .comentarios_clientes .comentario .yoga {
+    margin-left: 7rem;
+  }
+  .comentarios_clientes .comantario__yoga {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .comentarios_clientes .comantario__yoga .yoga {
+    margin: 0;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+  }
+  .equipo .card_equipo {
+    margin: 1.5rem;
+  }
+  .equipo .card_equipo img {
+    height: 66%;
+  }
+  .equipo .card_equipo .card__pie .card__title {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .equipo .card_equipo .card__pie .card__puesto {
+    font-size: 0.9rem;
+  }
+  /* ====NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .nuestro_taller .nuestro_taller__cierre {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .nuestro_taller .nuestro_taller__boton {
+    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
+  }
+  /* ====HORARIOS==== */
+  .horarios {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "titulo" "horarios" "dias";
+  }
+  .horarios .dias--section {
+    grid-area: dias;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .horarios .horario--section {
+    grid-area: horarios;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .horarios h2 {
+    grid-area: titulo;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .horarios h3 {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+  .horarios .calendario {
+    grid-area: dias_img;
+    width: 9rem;
+  }
+  .horarios .reloj {
+    grid-area: dias_img;
+    width: 6.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  /* ====MAPA==== */
+  .mapa {
+    height: 50rem;
+  }
+  .mapa h2 {
+    margin: 2rem;
+    text-align: center;
+  }
+  .mapa iframe {
+    height: 40rem;
+    width: 80%;
+    margin: 3rem;
+  }
+  /* ====CONTACTO==== */
+  .formulario {
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .formulario form {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  .formulario form .form__conjunto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .formulario form .form__conjunto .conjunto {
+    width: 90%;
+  }
+  .formulario form .form__conjunto--triple {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .formulario form .form__conjunto--triple .conjunto__triple label {
+    margin: 0.5rem;
+  }
+  .formulario form .form__conjunto--triple .talle select {
+    width: 50%;
+  }
+  .formulario form .boton2 input {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .page__404 img {
+    height: 30%;
+  }
+  .page__404 .texto__404 {
+    height: 55%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .page__404 .texto__404 h1 {
+    font-size: 8rem;
+    text-align: center;
+  }
+  .page__404 .texto__404 h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .banner .banner__text {
+    width: 100%;
+  }
+  .banner .banner__text .banner__text--title {
+    font-size: 5.5rem;
+    padding-bottom: 1rem;
+    margin-top: 7rem;
+  }
+  .banner .banner__text .banner__text--eslogan {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+  }
+  .banner .banner__text .banner__text--eslogan .banner_break {
+    display: inline;
+  }
+  /* ==== CARRUSEL==== */
+  .carrusel .d-item {
+    height: 30rem;
+  }
+  /* ==== CARD==== */
+  .card {
+    height: 20rem;
+    width: 11rem;
+    margin: 2rem;
+  }
+  .card img {
+    height: 70%;
+  }
+  .card .card__pie p {
+    font-size: 0.75rem;
+  }
+  /* ==== PROYECTOS==== */
+  .proyecto__title {
+    font-size: 2rem;
+  }
+  /* =============================FOOTER================= */
+  footer {
+    height: auto;
+    width: 100%;
+  }
+  footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li a {
+    font-size: 1.4em;
+  }
+  footer .footer__contenedor .footer__redes h3 {
+    font-size: 1.6rem;
+  }
+  footer h4 {
+    font-size: 0.9rem;
+  }
+  /*  VENTAS ====*/
+  .ventas {
+    /* ====PERSONALIZA==== */
+  }
+  .ventas .ventas__text {
+    font-size: 1.3rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto {
+    width: 10rem;
+    margin: 1rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto img {
+    height: 60%;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
+    font-size: 1rem;
+  }
+  .ventas .boton__ventas {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .personaliza {
+    padding: 5rem 0;
+  }
+  .personaliza .contenedor__derecho h2 {
+    font-size: 2.6rem;
+    padding: 0 1rem;
+  }
+  .personaliza .contenedor__derecho a {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+  /* ====CLIENTES FELICES==== */
+  .clientes_felices .clientes_felices__title {
+    font-size: 3rem;
+  }
+  .clientes_felices .clientes_felices__text {
+    font-size: 1rem;
+  }
+  .comentarios_clientes .comentario p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+  .comentarios_clientes .comentario img {
+    width: 10rem;
+  }
+  /* ==== EQUIPO==== */
+  .equipo {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .equipo .card_equipo {
+    margin: 0.7rem;
+  }
+  .equipo .card_equipo img {
+    height: 60%;
+  }
+  /* ====NUESTRO TALLER==== */
+  .nuestro_taller .nuestro_taller__title {
+    font-size: 2.5rem;
+  }
+  .nuestro_taller .nuestro_taller__text {
+    font-size: 1rem;
+    padding: 0 2rem;
+    margin: 0;
+  }
+  /* ====CONTACTO==== */
+  .formulario form .form__conjunto .conjunto {
+    width: 100%;
+  }
+  .page__404 .texto__404 h1 {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .page__404 .texto__404 h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .page__404 .texto__404 a {
+    font-size: 1rem;
+  }
+}

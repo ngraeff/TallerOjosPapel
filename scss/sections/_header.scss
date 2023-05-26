@@ -1,0 +1,33 @@
+header{
+    background-color: $color_nav_foot;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $ancho_maximo;
+    z-index: 1001;
+
+    .logo-navbar{
+        width: 6rem;
+    }
+
+    .item__estilo--propio,.sub-item__estilo--propio{
+        
+        padding: 1rem;
+        @include text-estilo(text-decoration,none,color,$color_text_nav,font-size,1.4rem,font-weight,500);
+        transition: all $velocidad_cambio_color ease-in-out;
+        align-items: center;
+        &:hover{
+            @include text-estilo(color,$color_contraste);
+        }
+    }
+    .sub-item__estilo--propio{
+        
+        @include text-estilo(color, #000,font-size,1rem);
+        .mar-der{
+            margin-right: 2rem;
+        }
+    }
+    .mar-der {
+        margin-right: 2rem;
+    }
+}

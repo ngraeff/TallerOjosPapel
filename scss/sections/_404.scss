@@ -1,0 +1,41 @@
+/* pagina de error 404 */
+.page__404{
+    background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+    background-size: cover;
+    background-position: center;
+    @include tamaños($ancho_maximo,100vh);
+    @include flex-dis(flex-direction,column,align-items,center,justify-content,center);
+
+        img{
+            height: 45%;
+        }
+
+        .texto__404{
+            @include tamaños($ancho_maximo,55%);
+            @include flex-dis(flex-direction,column,align-items,center,justify-content,space-between);
+
+            h1{
+                @include text-estilo(color, $color_contraste,font-size, 12rem, font-weight,bold);
+            }
+            h2{
+                @include text-estilo(color,#fff,font-size, $tamanio-titulos, font-weight,bold);
+            }
+            p{
+                @include text-estilo(color, #fff,font-size, 1.5rem, font-weight,300);
+            }
+            a{
+                border: solid .2rem $color_contraste ;
+                border-radius: 1rem;
+                padding: 1rem;
+                @include text-estilo(color, $color_contraste,font-size, 1.3rem, font-weight,600,text-decoration,none);
+                margin-bottom: 2rem;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: $color_contraste;
+                    color: #fff
+                }
+            }
+        }   
+
+}

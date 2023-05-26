@@ -1,0 +1,184 @@
+/* ========================================BANNER======================================== */
+.banner {
+    background-image: linear-gradient(to bottom, rgba(129, 20, 139, 0.479), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
+    background-size: cover;
+    background-position: center;
+    @include tamaños($ancho_maximo, 100vh);
+    @include flex-dis(justify-content, center, align-items, center);
+    margin: auto;
+
+
+    .banner__text {
+        padding-left: 10rem;
+        margin: auto;
+
+        .banner__text--title {
+            @include text-estilo(color, #fff, font-size, 8rem);
+            margin-top: 5rem;
+            padding-bottom: 1rem;
+        }
+
+        .banner__text--eslogan {
+            @include text-estilo(color, #fff, font-size, 2rem);
+            margin-top: 3rem;
+
+            span {
+                @include text-estilo(color, $color_contraste, font-style, italic, font-weight, 600);
+                
+            }
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .banner__contenedor {
+        width: 50%;
+        @include flex-dis(justify-content, center, align-items, center);
+        margin: auto;
+
+        .banner__img {
+            width: 35rem;
+            margin-top: 6rem;
+        }
+    }
+}
+
+
+/* ========================================CARRUSEL========================================*/
+.carrusel {
+    margin-bottom: 3rem;
+
+
+    .d-item {
+        height: 60rem;
+    }
+
+    .carousel-item img {
+        max-width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*  ========================================PROYECTOS======================================== */
+.proyecto__title {
+    @include text-estilo(text-align, center, font-size, $tamanio-titulos);
+    display: block;
+}
+
+.card {
+    @include flex-dis(justify-content, space-between, flex-direction, column);
+    @include tamaños(20rem, 30rem);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.2rem 0.4rem 0;
+    margin: auto;
+
+    img {
+        height: 70%;
+        object-fit: cover;
+        border-radius: 1.5rem 1.5rem 0 0;
+
+
+    }
+
+    .card__pie {
+        @include flex-dis(flex-direction, column, align-items, center, justify-content, center);
+
+        .card__title {
+            @include text-estilo(text-align, center, font-size,1.5rem, font-weight,600);
+            margin: 1rem 0;
+        }
+
+        p {
+            @include text-estilo(text-align, center, font-size, 1rem);
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+    }
+}
+
+.proyectos {
+    background-color: #fff;
+    padding-bottom: 5rem;
+    @include tamaños($ancho_maximo, 40rem);
+    @include flex-dis(flex-wrap, wrap, justify-content, center, align-items, center);
+
+    .card_proyectos {
+        transition: all 0.3s ease-in-out;
+
+        h3 {
+            display: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            @include tamaños($ancho_maximo, $altura_maxima);
+            font-size: 100%;
+            color: #fff;
+            font-weight: 600;
+            transition: all .3s ease-in-out;
+
+            br {
+                display: none;
+            }
+        }
+
+        img {
+            transition: .3s ease;
+        }
+
+        .card__pie {
+            transition: 1s ease-in-out;
+        }
+
+        /* ANIMACIONES: */
+        &:hover {
+            img {
+                display: none;
+            }
+
+            .card__pie {
+                display: none;
+            }
+
+            h3 {
+                display: flex;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+    
+    /* ANIMACIONES: */
+
+    .egresaditos:hover {
+        background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/egresaditos.webp);
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .yoga:hover {
+        background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/yoga.webp);
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .emprendimiento:hover {
+        background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Emprendimientos.webp);
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .personal_trainer:hover {
+        background-image: linear-gradient(to bottom, rgba(66, 66, 66, 0.479), rgba(37, 37, 37, 0.76)), url(../assets/img/Entrenamiento.webp);
+        background-size: cover;
+        background-position: center;
+        transition: all 0.5s ease-in-out;
+    }
+}

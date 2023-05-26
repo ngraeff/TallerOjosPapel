@@ -1,0 +1,36 @@
+.personaliza{
+    @include tamaños($ancho_maximo,60rem);
+    @include flex-dis(align-items,center,justify-content,space-between);
+    background-color: #272727;
+    
+    img{
+        @include flex-dis(align-items,center,justify-content,center);
+        width: 40rem;
+        margin: auto;
+        padding-left: 3rem;
+    }
+
+    .contenedor__derecho{
+        @include flex-dis(flex-direction,column,align-items,end,justify-content,center);
+        @include tamaños(50%,$altura_maxima);
+        margin: auto;
+        padding-right: 6rem;
+
+        h2{
+            @include text-estilo(color,#fff,font-size,5.5rem,font-weight,100,text-align,end);
+        }
+        a{
+            @include text-estilo(text-decoration,none,color,$color_contraste,font-size,1.2rem,font-weight,600,text-align,center);
+            border: 0.2rem solid #e637bf;
+            border-radius: 2rem;
+            padding: 1rem 1.5rem;
+            margin-top: 5rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+                background-color: #e637bf;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}

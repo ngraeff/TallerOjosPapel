@@ -1,0 +1,47 @@
+@mixin tamaños($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+}
+
+@mixin flex-dis($propiedades...){
+    display: flex;
+    @each $propiedad in $propiedades{
+        @if $propiedad == flex-direction{
+            flex-direction: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == flex-wrap{
+            flex-wrap: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == justify-content{
+            justify-content: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == align-items{
+            align-items: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+
+    }
+}
+
+@mixin text-estilo($propiedades...){
+    @each $propiedad in $propiedades{
+        @if $propiedad == color{
+            color: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == text-align{
+            text-align: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == text-decoration{
+            text-decoration: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == font-size{
+            font-size: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad == font-weight{
+            font-weight: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+        @else if $propiedad== font-style{
+            font-style: nth($propiedades, index($propiedades, $propiedad) + 1);
+        }
+    }
+}
+
