@@ -1,0 +1,5 @@
+#particles-js{
+    @include tamaños($ancho_maximo,100vh);
+    position: absolute;
+    z-index: 1;
+}

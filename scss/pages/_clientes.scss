@@ -4,25 +4,28 @@
 
 .clientes_felices{
     @include tamaños($ancho_maximo,100vh);
-    @include flex-dis(flex-direction,column,justify-content,center);
+    @include flex-dis(flex-direction,column,justify-content,center);   
     background-image: linear-gradient(to bottom, rgba(99, 49, 104, 0.438), rgba(54, 25, 82, 0.685)), url(../assets/img/background.webp);
     /* me gustaria agregarle como algun filtro al fondo así el texto es mas legible */
     background-size: cover;
     background-position: center;
     padding-top: 2rem;
     .clientes_felices__title {
+        width: 70%;
         margin-top: 8rem;
         @include text-estilo(font-size, 8rem,color, #fff,font-weight, 600,);
         margin-bottom: 5rem;
         padding: 0rem 6rem;
+        z-index: 2;
     }
     .clientes_felices__text {
-        @include text-estilo(font-size, 2rem,color, #fff,font-weight, 100);
+        @include text-estilo(font-size, 1.8rem,color, #fff,font-weight, 100);
         padding: 0rem 6rem;
         margin-bottom: 3rem;
         span {
             @include text-estilo(font-style, italic,color,$color_contraste,font-weight, 600);
         }
+        z-index: 2;
     }
     
 }
@@ -36,11 +39,12 @@
         p{
             width: 55%;
             margin: 2rem;
-            @include text-estilo(font-size,2rem,text-align,justify,font-weight,100);
+            @include text-estilo(font-size,1.5rem,text-align,justify,font-weight,100);
             padding: 0 5rem;
     
             span{
                 font-weight: 600;
+                font-size: 1.8rem;
             }
         }
         img{
