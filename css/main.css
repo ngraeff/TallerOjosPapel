@@ -661,10 +661,11 @@ footer h4 {
   padding-top: 2rem;
 }
 .clientes_felices .clientes_felices__title {
-  font-size: 9rem;
+  margin-top: 8rem;
+  font-size: 8rem;
   color: #fff;
   font-weight: 600;
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
   padding: 0rem 6rem;
 }
 .clientes_felices .clientes_felices__text {
