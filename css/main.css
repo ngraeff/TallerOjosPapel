@@ -6,8 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
+} /* header */
 header {
   background-color: rgba(102, 104, 105, 0.6862745098);
   position: fixed;
@@ -45,6 +44,7 @@ header .mar-der {
   margin-right: 2rem;
 }
 
+/* footer */
 footer {
   background-color: rgba(102, 104, 105, 0.6862745098);
   height: 20rem;
@@ -185,6 +185,7 @@ footer h4 {
   color: #000;
 }
 
+/* Seccion personalizar */
 .personaliza {
   height: 60rem;
   width: 100%;
@@ -257,6 +258,7 @@ footer h4 {
   cursor: pointer;
 }
 
+/* Seccion 404 */
 /* pagina de error 404 */
 .page__404 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
@@ -331,6 +333,7 @@ footer h4 {
   color: #fff;
 }
 
+/* INDEX */
 /* ========================================BANNER======================================== */
 .banner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 20, 139, 0.479)), to(rgba(54, 25, 82, 0.685))), url(../assets/img/background.webp);
@@ -387,7 +390,7 @@ footer h4 {
   margin: auto;
 }
 .banner .banner__contenedor .banner__img {
-  width: 35rem;
+  width: 30rem;
   margin-top: 6rem;
 }
 
@@ -562,6 +565,7 @@ footer h4 {
   transition: all 0.5s ease-in-out;
 }
 
+/* PRODUCTOS */
 .ventas {
   height: auto;
   width: 100%;
@@ -636,6 +640,7 @@ footer h4 {
   padding-top: 6rem;
 }
 
+/* CLIENTES */
 .not_scroll {
   overflow-x: hidden;
 }
@@ -718,6 +723,7 @@ footer h4 {
   margin-left: 7rem;
 }
 
+/* QUIENES SOMOS */
 /*======================================== EQUIPO ========================================*/
 .equipo__title {
   font-size: 3rem;
@@ -1088,6 +1094,7 @@ footer h4 {
 }
 
 /* RESPONSIVE */
+/* DESKOP */
 @media screen and (max-width: 1400px) {
   /* ===================BANNER=============== */
   .banner .banner__text {
@@ -1269,6 +1276,7 @@ footer h4 {
     padding: 0.4rem 0.6rem;
   }
 }
+/* TABLET */
 @media screen and (max-width: 800px) {
   .banner .banner__text {
     padding-left: 0;
@@ -1673,6 +1681,7 @@ footer h4 {
     font-size: 1rem;
   }
 }
+/* MOBILE */
 @media screen and (max-width: 430px) {
   .banner .banner__text {
     width: 100%;

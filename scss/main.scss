@@ -6,18 +6,30 @@
 
 
 
-
+/* header */
 @import 'sections/_header';
+
+/* footer */
 @import 'sections/_footer';
+/* Seccion personalizar */
 @import 'sections/_personaliza';
+/* Seccion 404 */
 @import 'sections/_404';
+
+/* INDEX */
 @import 'pages/_index';
+/* PRODUCTOS */
 @import 'pages/_productos';
+/* CLIENTES */
 @import 'pages/_clientes';
+/* QUIENES SOMOS */
 @import 'pages/_quienessomos';
 
-/* RESPONSIVE */
 
+/* RESPONSIVE */
+/* DESKOP */
 @import 'querys/_break1400';
+/* TABLET */
 @import 'querys/_break800';
+/* MOBILE */
 @import 'querys/_break430';
