@@ -1267,6 +1267,9 @@ footer h4 {
     font-size: 1rem;
     padding: 0;
   }
+  .comentarios_clientes .comentario p span {
+    font-size: 1.3rem;
+  }
   .comentarios_clientes .comentario img {
     width: 15rem;
     margin: 0;
@@ -1345,6 +1348,17 @@ footer h4 {
   .formulario form .boton2 input {
     font-size: 1rem;
     padding: 0.4rem 0.6rem;
+  }
+  /* ====404==== */
+  .page__404 img {
+    height: 35%;
+  }
+  .page__404 .texto__404 {
+    height: 65%;
+    width: 100%;
+  }
+  .page__404 .texto__404 h1 {
+    font-size: 10rem;
   }
 }
 /* TABLET */
@@ -1587,8 +1601,10 @@ footer h4 {
     width: 100%;
     text-align: center;
     margin: 3rem 0;
+    padding: 0 3rem;
+  }
+  .comentarios_clientes .comentario p span {
     font-size: 1.2rem;
-    padding: 0 5rem;
   }
   .comentarios_clientes .comentario img {
     width: 13rem;
