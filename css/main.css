@@ -615,14 +615,70 @@ footer h4 {
 }
 .ventas .contenedor__card__ventas .carta__producto .card__pie {
   height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.ventas .contenedor__card__ventas .carta__producto .card__pie .boton {
+.ventas .contenedor__card__ventas .carta__producto .card__pie .nombre-producto {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+  padding-top: 1.5rem;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .card__title {
+  margin-right: 1rem;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton {
+  margin-left: 1rem;
   border: 0.8rem solid #020381;
-  border-radius: 2rem;
+  border-radius: 0.7rem;
   background-color: #020381;
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton .aparece {
+  display: none;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton .aparece img {
+  height: auto;
+  width: 2rem;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover {
+  background-color: #e637bf;
+  border: #e637bf;
+  border-radius: 35%;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover .aparece {
+  display: block;
+  padding: 0.5rem 0.8rem;
+}
+.ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover .desaparece {
+  display: none;
 }
 .ventas .boton__ventas {
   display: inline;
@@ -1436,13 +1492,41 @@ footer h4 {
     width: 13rem;
     margin: 1.5rem;
   }
-  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
-    font-size: 1.2rem;
+  .ventas .contenedor__card__ventas .carta__producto img {
+    height: 65%;
   }
-  .ventas .contenedor__card__ventas .carta__producto .card__pie .boton {
-    border-radius: 2rem;
-    margin-top: 1rem;
+  .ventas .contenedor__card__ventas .carta__producto .card__pie {
+    height: 35%;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .nombre-producto {
+    font-size: 0.95rem;
+    padding: 1rem 0.5rem;
+    padding-top: 1.5rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie {
+    padding: 0 0.7rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .card__title {
+    margin: 0;
+    font-size: 1rem;
+    padding: 0;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton {
+    margin-top: 0rem;
+    border: 0.6rem solid #020381;
+    border-radius: 0.6rem;
+    background-color: #020381;
     font-size: 0.8rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton .aparece img {
+    height: auto;
+    width: 1.2rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover {
+    border-radius: 30%;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover .aparece {
+    padding: 0.5rem 1rem;
   }
   .ventas .boton__ventas {
     padding: 0.5rem;
@@ -1761,8 +1845,21 @@ footer h4 {
   .ventas .contenedor__card__ventas .carta__producto img {
     height: 60%;
   }
-  .ventas .contenedor__card__ventas .carta__producto .card__pie .card__title {
-    font-size: 1rem;
+  .ventas .contenedor__card__ventas .carta__producto .card__pie {
+    height: 40%;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .nombre-producto {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie {
+    padding-bottom: 1rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .card__title {
+    font-size: 0.9rem;
+  }
+  .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton {
+    margin-left: 0.5rem;
   }
   .ventas .boton__ventas {
     padding: 0.5rem;

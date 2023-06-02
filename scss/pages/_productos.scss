@@ -19,11 +19,54 @@
             margin: 2rem 5.1%;
             .card__pie{
                 height: $altura_maxima;
-                .boton{
-                    border: 0.8rem solid #020381;
-                    border-radius: 2rem;
-                    background-color: #020381;
-                    @include text-estilo(font-size,1rem,text-decoration,none,color, #fff);
+                justify-content: space-between;
+                .nombre-producto{
+
+                    @include text-estilo(font-size,1.2rem,font-style,italic,text-align,center);
+                    margin: 0;
+                    padding: 0 1rem;
+                    padding-top:1.5rem;
+                }
+                
+                .seccion__pie{
+                    height:100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: .5rem;
+                    @include flex-dis(justify-content,space-between,align-items,center);
+                    padding-bottom: 1rem;
+                    .card__title{
+                        margin-right: 1rem;
+                    }
+                    .boton{
+                        margin-left: 1rem;
+                        border: 0.8rem solid #020381;
+                        border-radius: .7rem;
+                        background-color: #020381;
+                        @include text-estilo(font-size,1rem,text-decoration,none,color, #fff);
+                        transition: $velocidad_cambio_color all;
+                        .aparece{
+                            display: none;
+                            transition: $velocidad_cambio_color all;
+                            img{
+                                @include tamaños(2rem,auto);
+                            }
+                        }
+                        &:hover{
+                            background-color: $color-contraste;
+                            border: $color-contraste;
+                            border-radius: 35%;
+                            .aparece{
+                                display: block;
+                                padding: .5rem .8rem;
+                                
+                                
+                            }
+                            .desaparece{
+                                display: none;
+                            }
+                        }
+                    }
 
                 }
             }

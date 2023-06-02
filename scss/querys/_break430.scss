@@ -80,9 +80,21 @@
                     width: 10rem;
                     margin: 1rem;
                     .card__pie{
-                        .card__title{
-                            font-size: 1rem;
-                        } 
+                        height: 40%;
+                        .nombre-producto{
+                            font-size: .90rem;
+                            padding-top: 1rem;
+                        }
+                        .seccion__pie{
+                            padding-bottom: 1rem;
+                            .card__title{
+                                font-size: .90rem;
+                            }
+                            .boton{
+                                margin-left: .5rem;
+                            }
+                
+                        }
                     }
                 }
             }

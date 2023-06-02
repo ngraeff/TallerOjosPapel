@@ -132,23 +132,54 @@
             .carta__producto {
                 width: 13rem;
                 margin: 1.5rem;
+                img{
+                    height: 65%;
+                }
                 .card__pie{
-                    .card__title{
-                        font-size: 1.2rem;
+                    height: 35%;
+                    .nombre-producto{
+                        font-size: .95rem;
+                        padding: 1rem .5rem;
+                        padding-top: 1.5rem;
                     }
-                    .boton{
-                        border-radius: 2rem;
-                        margin-top: 1rem;
-                        font-size: .8rem;
-    
+                    .seccion__pie{
+                        padding: 0 .7rem;
+                        .card__title{
+                            margin: 0;
+                            font-size: 1rem;
+                            padding: 0;
+                        }
+                        .boton{
+                            margin-top: 0rem;
+                            border: 0.6rem solid #020381;
+                            border-radius: .6rem;
+                            background-color: #020381;
+                            font-size: .8rem;
+                            .aparece{
+                                img{
+                                    @include tamaños(1.2rem,auto);
+                                }
+                            }
+                            &:hover{
+                                border-radius: 30%;
+                                .aparece{
+                                    padding: .5rem 1rem;
+                                    
+                                    
+                                }
+                            }
+                        }
+            
                     }
                 }
+
             }
         }
         .boton__ventas {
             padding: .5rem;
             font-size: .8rem;
         }
+
 
          /* ====PERSONALIZA==== */
 }
