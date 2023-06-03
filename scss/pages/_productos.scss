@@ -50,6 +50,7 @@
                             transition: $velocidad_cambio_color all;
                             img{
                                 @include tamaños(2rem,auto);
+                                margin-right:.25rem ;
                             }
                         }
                         &:hover{

@@ -668,6 +668,7 @@ footer h4 {
 .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton .aparece img {
   height: auto;
   width: 2rem;
+  margin-right: 0.25rem;
 }
 .ventas .contenedor__card__ventas .carta__producto .card__pie .seccion__pie .boton:hover {
   background-color: #e637bf;
