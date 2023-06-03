@@ -112,6 +112,7 @@ footer .footer__contenedor .footer__map .footer__map--ul {
           flex-direction: column;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 0;
 }
 footer .footer__contenedor .footer__map .footer__map--ul .footer__map--li {
   text-align: center;
@@ -282,10 +283,10 @@ footer h4 {
           justify-content: center;
 }
 .page__404 img {
-  height: 45%;
+  height: 40%;
 }
 .page__404 .texto__404 {
-  height: 55%;
+  height: 60%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,7 +304,7 @@ footer h4 {
 }
 .page__404 .texto__404 h1 {
   color: #e637bf;
-  font-size: 12rem;
+  font-size: 11rem;
   font-weight: bold;
 }
 .page__404 .texto__404 h2 {
@@ -319,12 +320,12 @@ footer h4 {
 .page__404 .texto__404 a {
   border: solid 0.2rem #e637bf;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
   color: #e637bf;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -725,14 +726,12 @@ footer h4 {
   padding-top: 2rem;
 }
 .clientes_felices .clientes_felices__title {
-  width: 70%;
   margin-top: 8rem;
   font-size: 8rem;
   color: #fff;
   font-weight: 600;
   margin-bottom: 5rem;
   padding: 0rem 6rem;
-  z-index: 2;
 }
 .clientes_felices .clientes_felices__text {
   font-size: 1.8rem;

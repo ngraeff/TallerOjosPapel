@@ -11,12 +11,11 @@
     background-position: center;
     padding-top: 2rem;
     .clientes_felices__title {
-        width: 70%;
         margin-top: 8rem;
         @include text-estilo(font-size, 8rem,color, #fff,font-weight, 600,);
         margin-bottom: 5rem;
         padding: 0rem 6rem;
-        z-index: 2;
+
     }
     .clientes_felices__text {
         @include text-estilo(font-size, 1.8rem,color, #fff,font-weight, 100);

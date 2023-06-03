@@ -7,15 +7,15 @@
     @include flex-dis(flex-direction,column,align-items,center,justify-content,center);
 
         img{
-            height: 45%;
+            height: 40%;
         }
 
         .texto__404{
-            @include tamaños($ancho_maximo,55%);
+            @include tamaños($ancho_maximo,60%);
             @include flex-dis(flex-direction,column,align-items,center,justify-content,space-between);
 
             h1{
-                @include text-estilo(color, $color_contraste,font-size, 12rem, font-weight,bold);
+                @include text-estilo(color, $color_contraste,font-size, 11rem, font-weight,bold);
             }
             h2{
                 @include text-estilo(color,#fff,font-size, $tamanio-titulos, font-weight,bold);
@@ -26,9 +26,9 @@
             a{
                 border: solid .2rem $color_contraste ;
                 border-radius: 1rem;
-                padding: 1rem;
-                @include text-estilo(color, $color_contraste,font-size, 1.3rem, font-weight,600,text-decoration,none);
-                margin-bottom: 2rem;
+                padding: .8rem;
+                @include text-estilo(color, $color_contraste,font-size, 1.1rem, font-weight,600,text-decoration,none);
+                margin-bottom: 2.5rem;
                 transition: all .3s ease;
 
                 &:hover{
