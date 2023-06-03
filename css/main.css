@@ -454,9 +454,9 @@ footer h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: spa;
+      -ms-flex-pack: spa;
+          justify-content: spa;
 }
 .card .card__pie .card__title {
   text-align: center;
@@ -522,6 +522,7 @@ footer h4 {
 .proyectos .card_proyectos .card__pie {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  height: 30%;
 }
 .proyectos .card_proyectos:hover img {
   display: none;
@@ -814,14 +815,24 @@ footer h4 {
   margin-bottom: 5rem;
 }
 .equipo .card_equipo .card__pie {
-  height: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipo .card_equipo .card__pie .card__title {
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 .equipo .card_equipo .card__pie .card__puesto {
   font-size: 1rem;
   font-weight: 600;
   color: #706f6f;
   text-align: center;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
 /*======================================== NUESTRO TALLER ========================================*/
@@ -1632,9 +1643,13 @@ footer h4 {
   .equipo .card_equipo img {
     height: 66%;
   }
+  .equipo .card_equipo .card__pie {
+    height: 34%;
+  }
   .equipo .card_equipo .card__pie .card__title {
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   .equipo .card_equipo .card__pie .card__puesto {
     font-size: 0.9rem;

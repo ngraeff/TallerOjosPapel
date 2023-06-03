@@ -260,9 +260,11 @@
             }
             
             .card__pie {
+                height: 34%;
                 .card__title{
-                    padding-top:2rem; 
+                    padding-top:1rem; 
                     font-size: 1.2rem;
+                    margin-bottom: 1rem;
                 }
                 .card__puesto {
                     font-size: .9rem;

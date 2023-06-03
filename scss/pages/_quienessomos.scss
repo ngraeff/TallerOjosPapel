@@ -13,12 +13,17 @@
     margin-bottom: 5rem;
 
     .card_equipo {
-        .card__pie {
-            height: 100%;
 
+        .card__pie {
+            height: 30%;
+            @include flex-dis(justify-content,center);
+            .card__title{
+                padding-bottom: 1rem;
+                margin-top: 1.5rem
+            }
             .card__puesto {
                 @include text-estilo(font-size, 1rem, font-weight, 600, color, #706f6f, text-align, center);
-                margin: 0;
+                margin-bottom: 2rem
             }
         }
 

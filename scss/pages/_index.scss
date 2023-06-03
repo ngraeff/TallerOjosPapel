@@ -88,7 +88,7 @@
     }
 
     .card__pie {
-        @include flex-dis(flex-direction, column, align-items, center, justify-content, center);
+        @include flex-dis(flex-direction, column, align-items, center, justify-content, spa);
 
         .card__title {
             @include text-estilo(text-align, center, font-size,1.5rem, font-weight,600);
@@ -137,6 +137,8 @@
 
         .card__pie {
             transition: 1s ease-in-out;
+            height: 30%;
+        
         }
 
         /* ANIMACIONES: */
